@@ -2,9 +2,8 @@
  * Created by Soldier on 12/2/2016.
  */
 const kinveyBaseUrl = "https://baas.kinvey.com/";
-const kinveyAppKey = ""; //TODO: Create new back-end
 const kinveyAppSecret =
-    "";
+    "9aaf3e7a620c4606874886e97c1795a6";
 const kinveyAppAuthHeaders = {
     'Authorization': "Basic " +
     btoa(kinveyAppKey + ":" + kinveyAppSecret)

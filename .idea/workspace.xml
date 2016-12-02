@@ -68,8 +68,8 @@
       <file leaf-file-name="auth.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="91" column="2" selection-start-line="91" selection-start-column="2" selection-end-line="91" selection-end-column="2" />
+            <state relative-caret-position="34">
+              <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
               <folding>
                 <element signature="e#0#43#0" expanded="false" />
               </folding>
@@ -294,12 +294,12 @@
       <workItem from="1480675237097" duration="10680000" />
       <workItem from="1480687599070" duration="615000" />
       <workItem from="1480688742377" duration="1513000" />
-      <workItem from="1480701015875" duration="542000" />
+      <workItem from="1480701015875" duration="1383000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86191000" />
+    <option name="totallyTimeSpent" value="87032000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -664,8 +664,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/auth.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="91" column="2" selection-start-line="91" selection-start-column="2" selection-end-line="91" selection-end-column="2" />
+        <state relative-caret-position="34">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
           <folding>
             <element signature="e#0#43#0" expanded="false" />
           </folding>
