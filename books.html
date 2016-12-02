@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Books</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://da189i1jfloii.cloudfront.net/js/kinvey-html5-sdk-3.3.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="scripts/paginating.js"></script>
+    <script src="scripts/views.js"></script>
+    <script src="scripts/utilities.js"></script>
+    <script src="scripts/auth.js"></script>
+    <script src="scripts/ajax.js"></script>
+    <script src="scripts/books-library.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/book-library.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+
+</head>
+<body onload="startApp()">
+<header id="menu">
+    <a href="#" id="linkHome">Home</a>
+    <a href="#" id="linkLogin">Login</a>
+    <a href="#" id="linkRegister">Register</a>
+    <a href="#" id="linkListBooks">List Books</a>
+    <a href="#" id="linkLogout">Logout</a>
+</header>
+
+<section id="loadingBox">Loading ...</section>
+
+<section id="infoBox">Info</section>
+
+<section id="errorBox">Error</section>
+
+<br>
+<main>
+    <section id="viewLogin">
+        <h1>Please login</h1>
+        <form id="formLogin">
+            <div>Username:</div>
+            <div><input type="text" name=
+                    "username" required /></div>
+            <div>Password:</div>
+            <div><input type="password"
+                        name="passwd" required /></div>
+            <div><input type="submit"
+                        id="buttonLoginUser" value="Login" /></div>
+        </form>
+    </section>
+
+    <section id="viewRegister">
+        <h1>Please register here</h1>
+        <form id="formRegister">
+            <div>Username:</div>
+            <div><input type="text" name=
+                    "username" required /></div>
+            <div>Password:</div>
+            <div><input type="password"
+                        name="passwd" required /></div>
+            <div><input type="submit"
+                        id="buttonRegisterUser" value="Register" /></div>
+        </form>
+    </section>
+
+    <section id="viewBooks">
+        <form id="formSearchName">
+        <div>Seach by name:</div>
+        <div><input type="search" name="searchBox" required /></div>
+        <div><input type="submit" placeholder="Search..."
+                    id="submitNameSearch" value="Seach Name" /></div>
+            </form>
+        <br>
+        <form id="formSearchPageCount">
+            <div>Seach by page count:</div>
+            <div>From:</div>
+            <div><input type="number" name=
+                    "fromNumber" required /></div>
+            <div>To:</div>
+            <div><input type="number" name=
+                    "toNumber" required /></div>
+            <div><input type="submit" placeholder="Search..."
+                        id="submitPageCountSearch" value="Seach Page Count" /></div>
+        </form>
+        <br>
+        <form id="formSearchGenre">
+            <div>Seach by genre:</div>
+            <div><input type="search" name="searchBox" required /></div>
+            <div><input type="submit" placeholder="Search..."
+                        id="submitGenreSearch" value="Seach Genre" /></div>
+        </form>
+        <br>
+        <h1>Books</h1>
+        <div id="books">
+            <table>
+                <tr>
+                    <th>Cover</th>
+                    <th>Title</th>
+                    <th>Genre</th>
+                    <th>Page Count</th>
+                </tr>
+                <tr>
+                    <td>Book cover</td>
+                    <td>Book title</td>
+                    <td>Book genre</td>
+                    <td>Book page count</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="viewSearchedByNameBooks">
+        <h1>Searched By Name.</h1>
+        <div id="searchedByNameBooks">
+            <table>
+                <tr>
+                    <th>Cover</th>
+                    <th>Title</th>
+                    <th>Genre</th>
+                    <th>Page Count</th>
+                </tr>
+                <tr>
+                    <td>Book cover</td>
+                    <td>Book title</td>
+                    <td>Book genre</td>
+                    <td>Book page count</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="viewSearchedByPageCount">
+        <h1>Searched By Page Count.</h1>
+        <div id="searchedByPageCountBooks">
+            <table>
+                <tr>
+                    <th>Cover</th>
+                    <th>Title</th>
+                    <th>Genre</th>
+                    <th>Page Count</th>
+                </tr>
+                <tr>
+                    <td>Book cover</td>
+                    <td>Book title</td>
+                    <td>Book genre</td>
+                    <td>Book page count</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="viewSearchedByGenre">
+        <h1>Searched By Genre.</h1>
+        <div id="searchedByGenre">
+            <table>
+                <tr>
+                    <th>Cover</th>
+                    <th>Title</th>
+                    <th>Genre</th>
+                    <th>Page Count</th>
+                </tr>
+                <tr>
+                    <td>Book cover</td>
+                    <td>Book title</td>
+                    <td>Book genre</td>
+                    <td>Book page count</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="viewCreateBook">
+        <h1>Create new book</h1>
+        <form enctype="multipart/form-data" method="post" id="formCreateBook" name="fileUpload">
+            <div>Image:</div>
+            <div><input multiple type="file" id="file" /></div>
+            <div>Name:</div>
+            <div><input type="text" name="name" required /></div>
+            <div>Genre:</div>
+            <div><select id="genre" required>
+                <option value="Comedy">Comedy</option>
+                <option value="Drama">Drama</option>
+                <option value="Biography">Biography</option>
+                <option value="Action">Action</option>
+                <option value="Parody">Parody</option>
+                <option value="Fantasy">Fantasy</option>
+                <option value="Thriller">Thriller</option>
+            </select></div>
+            <div>Pages count:</div>
+            <div><input type="number" name="pageCount" required /></div>
+            <div><input type="submit"
+                        id="buttonCreateBook" value="Create" /></div>
+        </form>
+    </section>
+</main>
+</body>
+</html>
