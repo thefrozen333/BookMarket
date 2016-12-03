@@ -22,6 +22,7 @@ function saveAuthInSession(userInfo) {
     let userId = userInfo._id;
     sessionStorage.setItem('userId', userId);
     let username = userInfo.username;
+    sessionStorage.setItem('username', username);
 }
 
 function getKinveyUserAuthHeaders() {
@@ -55,7 +56,7 @@ function loginUser(event) {
     }
 
 
-    var promise = Kinvey.User.login(username, password).then(loginSuccess).catch(handleAjaxError);
+    let promise = Kinvey.User.login(username, password).then(loginSuccess).catch(handleAjaxError);
 
     function loginSuccess(userInfo) {
         saveAuthInSession(userInfo);

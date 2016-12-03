@@ -1,7 +1,7 @@
 (function ($) {
   $.fn.page = function (PageSize) {
     $(this).addClass("page-table")
-    var tableId = $(this).attr("id");
+      let tableId = $(this).attr("id");
 
     //if id is not defined for table. Do Nothing.
     if (typeof tableId == 'undefined') {
@@ -28,8 +28,8 @@
     $(this).after('<ul class="pagination" for="' + tableId + '"></ul>');
 
     //Add a pager control for each page
-    var currpage = 1;
-    var item = 1;
+    let currpage = 1;
+    let item = 1;
     $(this).find('tr:has(td)').each(function () {
 
       $(this).attr('data-page', currpage);
@@ -50,14 +50,14 @@
       pageNumber($(this).attr('data-page'), this);
     });
     return this;
-  }
+  };
 
   // Private function page change
   function pageNumber(iPage, element) {
     if (typeof element == 'string') {
-      var target = element;
+      let target = element;
     } else {
-      var target = $(element).attr("for");
+      let target = $(element).attr("for");
     }
 
 
