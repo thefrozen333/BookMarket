@@ -5,29 +5,30 @@ function startApp(){
     sessionStorage.clear();
     showHideMenuLinks();
 
-    //Logged in user
+
     if(sessionStorage.getItem('authToken')) {
-       showView('viewCreateBook');
-   }
+        showView('viewBooks');
+    }
     //No logged in user
     else{
-       showView('viewLogin');
-   }
+        showView('viewHome');
+    }
 
     //Bind the navigation menu links
-    $('#linkHome').click(createBookView);
+    $('#linkHome').click(showHomeView);
     $('#linkLogin').click(showLoginView);
     $('#linkRegister').click(showRegisterView);
-    $('#linkListBooks').click(bookRequester.listBooks);
+    $('#linkCreateBook').click(createBookView);
+    $('#linkListBooks').click(listBooks);
     $('#linkLogout').click(logout);
 
     //Bind the form submit buttons
     $('#formLogin').submit(loginUser);
     $('#formRegister').submit(registerUser);
-    $('#formCreateBook').submit(bookRequester.createBook);
-    $('#formSearchName').submit(bookRequester.searchName);
-    $('#formSearchPageCount').submit(bookRequester.searchPageCount);
-    $('#formSearchGenre').submit(bookRequester.searchGenre);
+    $('#formCreateBook').submit(createBook);
+    $('#formSearchName').submit(searchName);
+    $('#formSearchPageCount').submit(searchPageCount);
+    $('#formSearchGenre').submit(searchGenre);
 
     //Bind the info error boxes
     $('#infoBox, #errorBox').click(function () {

@@ -37,7 +37,7 @@ function logout() {
     sessionStorage.clear();
     Kinvey.User.logout();
     showHideMenuLinks();
-    showView('viewLogin');
+    showView('viewHome');
     $('#formLogin').trigger('reset');
     showInfo("Logout successful.");
 }
@@ -63,7 +63,7 @@ function loginUser(event) {
         saveAuthInSession(userInfo);
         showHideMenuLinks();
         showView("viewBooks");
-        bookRequester.listBooks();
+        listBooks();
         showInfo('Login successful.')
     }
 }
@@ -73,12 +73,12 @@ function registerUser(event) {
     let username = $('#formRegister input[name=username]').val();
     let password = $('#formRegister input[name=passwd]').val();
     if(username.length < 5){
-        showError("Username must consist of atleast 5 characters.");
+        showError("Username must consist of at least 5 characters.");
         return;
     }
 
     if(password.length < 5){
-        showError("Password must consist of atleast 5 characters.");
+        showError("Password must consist of at least 5 characters.");
         return;
     }
     let userData = {
@@ -99,6 +99,7 @@ function registerUser(event) {
     function registerSuccess(userInfo) {
         saveAuthInSession(userInfo);
         showHideMenuLinks();
+        showView("viewBooks");
         listBooks();
         showInfo('User registration successful.')
     }

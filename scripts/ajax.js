@@ -2,13 +2,12 @@
  * Created by Soldier on 12/2/2016.
  */
 //books/all
-let bookRequester = function() {
     function listBooks() {
         $('#formSearchName').trigger('reset');
         $('#formSearchPageCount').trigger('reset');
         $('#formSearchGenre').trigger('reset');
         $('#books').empty();
-        showView('viewBooks');
+        showBooksView();
 
         $.ajax({
             method: "GET",
@@ -224,5 +223,3 @@ let bookRequester = function() {
             }).catch(handleAjaxError);
         }
     }
-    return {listBooks}
-}

@@ -13,22 +13,24 @@
     <script src="scripts/Utilities/utilities.js"></script>
     <script src="scripts/auth.js"></script>
     <script src="scripts/ajax.js"></script>
-    <script src="scripts/books-library.js"></script>
 
     <script src="scripts/Controllers/BookController.js"></script>
     <script src="scripts/Models/BookModel.js"></script>
     <script src="scripts/Views/BookViews.js"></script>
     <script src="scripts/Services/AuthService.js"></script>
     <script src="scripts/Utilities/Requester.js"></script>
+    <script src="scripts/books-library.js"></script>
     <script src="scripts/App.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/book-library.css">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap-3.3.7-dist/css/bootstrap.min.css ">
 
 </head>
 <header id="menu">
     <body onload="startApp()">
     <a href="#" id="linkHome">Home</a>
     <a href="#" id="linkLogin">Login</a>
-    <a href="#" id="linkRegister">Register</a>
+    <a href="#" id="linkRegister">Register
+    <a href="#" id="linkCreateBook">Create Book</a>
     <a href="#" id="linkListBooks">List Books</a>
     <a href="#" id="linkLogout">Logout</a>
 </header>
@@ -41,6 +43,17 @@
 
 <br>
 <main>
+    <section id="viewHome">
+        <div class="jumbotron">
+            <h1 class="display-3">Book Marketplace</h1>
+            <p class="lead">“Good friends, good books, and a sleepy conscience: this is the ideal life.”
+                ― Mark Twain</p>
+            <hr class="my-2">
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">To the Marketplace</a>
+            </p>
+        </div>
+    </section>
     <section id="viewLogin">
         <h1>Please login</h1>
         <form id="formLogin">

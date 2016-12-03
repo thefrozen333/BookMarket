@@ -15,6 +15,7 @@ function showHideMenuLinks() {
         $('#linkRegister').hide();
         $('#linkListBooks').show();
         $('#linkLogout').show();
+        $('#linkCreateBook').show();
     }
 
     else {
@@ -23,7 +24,18 @@ function showHideMenuLinks() {
         $('#linkRegister').show();
         $('#linkListBooks').hide();
         $('#linkLogout').hide();
+        $('#linkCreateBook').hide();
     }
+}
+
+function showHomeView(){
+    showView('viewHome');
+}
+
+
+
+function showBooksView(){
+    showView('viewBooks');
 }
 
 function showLoginView() {
