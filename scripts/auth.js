@@ -1,6 +1,7 @@
 /**
  * Created by Soldier on 12/2/2016.
  */
+const kinveyAppKey = "kid_BkyF2NyXg";
 const kinveyBaseUrl = "https://baas.kinvey.com/";
 const kinveyAppSecret =
     "9aaf3e7a620c4606874886e97c1795a6";
@@ -61,7 +62,8 @@ function loginUser(event) {
     function loginSuccess(userInfo) {
         saveAuthInSession(userInfo);
         showHideMenuLinks();
-        listBooks();
+        showView("viewBooks");
+        bookRequester.listBooks();
         showInfo('Login successful.')
     }
 }

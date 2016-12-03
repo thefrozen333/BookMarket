@@ -2,7 +2,7 @@
  * Created by Soldier on 12/2/2016.
  */
 //books/all
-let requester = function() {
+let bookRequester = function() {
     function listBooks() {
         $('#formSearchName').trigger('reset');
         $('#formSearchPageCount').trigger('reset');
@@ -224,5 +224,5 @@ let requester = function() {
             }).catch(handleAjaxError);
         }
     }
-    return {listBooks,}
+    return {listBooks}
 }

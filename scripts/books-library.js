@@ -18,16 +18,16 @@ function startApp(){
     $('#linkHome').click(createBookView);
     $('#linkLogin').click(showLoginView);
     $('#linkRegister').click(showRegisterView);
-    $('#linkListBooks').click(listBooks);
+    $('#linkListBooks').click(bookRequester.listBooks);
     $('#linkLogout').click(logout);
 
     //Bind the form submit buttons
     $('#formLogin').submit(loginUser);
     $('#formRegister').submit(registerUser);
-    $('#formCreateBook').submit(createBook);
-    $('#formSearchName').submit(searchName);
-    $('#formSearchPageCount').submit(searchPageCount);
-    $('#formSearchGenre').submit(searchGenre);
+    $('#formCreateBook').submit(bookRequester.createBook);
+    $('#formSearchName').submit(bookRequester.searchName);
+    $('#formSearchPageCount').submit(bookRequester.searchPageCount);
+    $('#formSearchGenre').submit(bookRequester.searchGenre);
 
     //Bind the info error boxes
     $('#infoBox, #errorBox').click(function () {
