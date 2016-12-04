@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e6b4211-e19d-430c-9bbd-7589b358c506" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/books.html" afterPath="$PROJECT_DIR$/books.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/Controllers/UserController.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/Controllers/test.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/Models/UserModel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scripts/Views/UserView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/App.js" afterPath="$PROJECT_DIR$/scripts/App.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/Controllers/BookController.js" afterPath="$PROJECT_DIR$/scripts/Controllers/BookController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/Models/BookModel.js" afterPath="$PROJECT_DIR$/scripts/Models/BookModel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/Utilities/Requester.js" afterPath="$PROJECT_DIR$/scripts/Utilities/Requester.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/Views/BookViews.js" afterPath="$PROJECT_DIR$/scripts/Views/BookViews.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/ajax.js" afterPath="$PROJECT_DIR$/scripts/ajax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/auth.js" afterPath="$PROJECT_DIR$/scripts/auth.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/books-library.js" afterPath="$PROJECT_DIR$/scripts/books-library.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/scripts/views.js" afterPath="$PROJECT_DIR$/scripts/Utilities/showViewsUtility.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/Utilities/showViewsUtility.js" afterPath="$PROJECT_DIR$/scripts/Utilities/showViewsUtility.js" />
     </list>
     <ignored path="BooksLibraryV2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,7 +31,7 @@
       <file leaf-file-name="books.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/books.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
+            <state relative-caret-position="323">
               <caret line="19" column="54" lean-forward="false" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
               <folding />
             </state>
@@ -45,8 +41,8 @@
       <file leaf-file-name="BookModel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/Models/BookModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="340">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="n#!!block;n#getBookById#0;n#BookModel#0" expanded="false" />
@@ -58,10 +54,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookController.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="showViewsUtility.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/Utilities/showViewsUtility.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" column="1" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserView.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/Views/UserView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/Controllers/UserController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BookController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/Controllers/BookController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
+            <state relative-caret-position="272">
               <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
               <folding>
                 <element signature="n#!!block;n#getBook#0;n#BookController#0" expanded="false" />
@@ -74,10 +100,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="UserModel.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/Models/UserModel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ajax.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/ajax.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3360">
+            <state relative-caret-position="3247">
               <caret line="193" column="50" lean-forward="true" selection-start-line="193" selection-start-column="50" selection-end-line="193" selection-end-column="50" />
               <folding>
                 <element signature="n#!!doc;n#listBooks#0" expanded="false" />
@@ -89,25 +125,24 @@
       <file leaf-file-name="BookViews.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/Views/BookViews.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1125">
-              <caret line="86" column="13" lean-forward="false" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
+            <state relative-caret-position="396">
+              <caret line="86" column="13" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="n#!!block;n#appendBookRow#0;n#BookViews#0" expanded="false" />
                 <element signature="n#!!block;n#getSearchGenre#0;n#BookViews#0" expanded="false" />
                 <element signature="n#!!block;n#searchPageCount#0;n#BookViews#0" expanded="false" />
                 <element signature="n#!!block;n#renderSearchedBooks#0;n#BookViews#0" expanded="false" />
-                <element signature="n#!!block;n#getImg#0;n#BookViews#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+            <state relative-caret-position="176">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -168,6 +203,7 @@
         <option value="$PROJECT_DIR$/scripts/Views/BookViews.js" />
         <option value="$PROJECT_DIR$/scripts/Models/BookModel.js" />
         <option value="$PROJECT_DIR$/scripts/Controllers/BookController.js" />
+        <option value="$PROJECT_DIR$/scripts/Views/UserView.js" />
       </list>
     </option>
   </component>
@@ -201,8 +237,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -231,6 +265,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -247,14 +283,14 @@
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\work\JS core(SoftUni)\BookMarket\libs" />
+      <recent name="C:\Users\Soldier\WebstormProjects\BooksLibraryV2\scripts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\work\JS core(SoftUni)\BookMarket\scripts\Utilities" />
       <recent name="D:\work\JS core(SoftUni)\BookMarket\scripts\Services" />
       <recent name="C:\Users\Soldier\WebstormProjects\BooksLibraryV2\styles" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\work\JS core(SoftUni)\BookMarket\libs" />
-      <recent name="C:\Users\Soldier\WebstormProjects\BooksLibraryV2\scripts" />
     </key>
   </component>
   <component name="RunManager" selected="JavaScript Debug.books.html">
@@ -354,11 +390,12 @@
       <workItem from="1480723804656" duration="514000" />
       <workItem from="1480747605169" duration="24420000" />
       <workItem from="1480862013645" duration="22038000" />
+      <workItem from="1480892257762" duration="119000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141593000" />
+    <option name="totallyTimeSpent" value="141712000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -370,25 +407,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.49605057" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.50605583" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.49605057" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960506" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.49394417" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.49605057" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.49605057" order="6" side_tool="false" content_ui="tabs" />
@@ -430,7 +467,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../AJAX/blog.html" />
     <entry file="file://$PROJECT_DIR$/scripts/jquery.min.js" />
     <entry file="file://$PROJECT_DIR$/books.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -444,7 +480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
           <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -473,7 +508,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
           <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -502,7 +536,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="45" column="18" lean-forward="false" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -544,8 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/Controllers/UserController.js" />
-    <entry file="file://$PROJECT_DIR$/scripts/Models/UserModel.js" />
     <entry file="file://$PROJECT_DIR$/scripts/Views/UserViews.js" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -558,7 +589,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -566,7 +596,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-153">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -616,26 +645,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/Utilities/showViewsUtility.js">
+    <entry file="file://$PROJECT_DIR$/books.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="41" column="1" lean-forward="false" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+        <state relative-caret-position="323">
+          <caret line="19" column="54" lean-forward="false" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/books.html">
+    <entry file="file://$PROJECT_DIR$/scripts/ajax.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="19" column="54" lean-forward="false" selection-start-line="19" selection-start-column="54" selection-end-line="19" selection-end-column="54" />
+        <state relative-caret-position="3247">
+          <caret line="193" column="50" lean-forward="true" selection-start-line="193" selection-start-column="50" selection-end-line="193" selection-end-column="50" />
+          <folding>
+            <element signature="n#!!doc;n#listBooks#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Controllers/BookController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!block;n#getBook#0;n#BookController#0" expanded="false" />
+            <element signature="n#!!block;n#getBooks#0;n#BookController#0" expanded="false" />
+            <element signature="n#!!block;n#searchGenre#0;n#BookController#0" expanded="false" />
+            <element signature="n#!!block;n#searchPageCount#0;n#BookController#0" expanded="false" />
+            <element signature="n#!!block;n#searchName#0;n#BookController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Models/UserModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/Models/BookModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="n#!!block;n#getBookById#0;n#BookModel#0" expanded="false" />
@@ -646,50 +699,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="8" column="24" lean-forward="false" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/Views/BookViews.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1125">
-          <caret line="86" column="13" lean-forward="false" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
+        <state relative-caret-position="396">
+          <caret line="86" column="13" lean-forward="true" selection-start-line="86" selection-start-column="13" selection-end-line="86" selection-end-column="13" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="n#!!block;n#appendBookRow#0;n#BookViews#0" expanded="false" />
             <element signature="n#!!block;n#getSearchGenre#0;n#BookViews#0" expanded="false" />
             <element signature="n#!!block;n#searchPageCount#0;n#BookViews#0" expanded="false" />
             <element signature="n#!!block;n#renderSearchedBooks#0;n#BookViews#0" expanded="false" />
-            <element signature="n#!!block;n#getImg#0;n#BookViews#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/ajax.js">
+    <entry file="file://$PROJECT_DIR$/scripts/Utilities/showViewsUtility.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3360">
-          <caret line="193" column="50" lean-forward="true" selection-start-line="193" selection-start-column="50" selection-end-line="193" selection-end-column="50" />
-          <folding>
-            <element signature="n#!!doc;n#listBooks#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="612">
+          <caret line="36" column="1" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/Controllers/BookController.js">
+    <entry file="file://$PROJECT_DIR$/scripts/Views/UserView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-          <folding>
-            <element signature="n#!!block;n#getBook#0;n#BookController#0" expanded="false" />
-            <element signature="n#!!block;n#getBooks#0;n#BookController#0" expanded="false" />
-            <element signature="n#!!block;n#searchGenre#0;n#BookController#0" expanded="false" />
-            <element signature="n#!!block;n#searchPageCount#0;n#BookController#0" expanded="false" />
-            <element signature="n#!!block;n#searchName#0;n#BookController#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="252">
+          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Controllers/UserController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
