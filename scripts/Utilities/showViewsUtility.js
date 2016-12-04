@@ -32,8 +32,6 @@ function showHomeView(){
     showView('viewHome');
 }
 
-
-
 function showBooksView(){
     showView('viewBooks');
 }

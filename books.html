@@ -9,24 +9,21 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script src="scripts/Utilities/paginating.js"></script>
-    <script src="scripts/views.js"></script>
+    <script src="scripts/Utilities/showViewsUtility.js"></script>
     <script src="scripts/Utilities/utilities.js"></script>
-    <script src="scripts/auth.js"></script>
-    <script src="scripts/ajax.js"></script>
+    <script src="scripts/Services/AuthService.js"></script>
+    <script src="scripts/Utilities/Requester.js"></script>
+
 
     <script src="scripts/Controllers/BookController.js"></script>
     <script src="scripts/Models/BookModel.js"></script>
     <script src="scripts/Views/BookViews.js"></script>
-    <script src="scripts/Services/AuthService.js"></script>
-    <script src="scripts/Utilities/Requester.js"></script>
-    <script src="scripts/books-library.js"></script>
     <script src="scripts/App.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/book-library.css">
     <link rel="stylesheet" type="text/css" href="libs/bootstrap-3.3.7-dist/css/bootstrap.min.css ">
 
 </head>
 <header id="menu">
-    <body onload="startApp()">
     <a href="#" id="linkHome">Home</a>
     <a href="#" id="linkLogin">Login</a>
     <a href="#" id="linkRegister">Register
@@ -50,7 +47,7 @@
                 ― Mark Twain</p>
             <hr class="my-2">
             <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">To the Marketplace</a>
+                <a class="btn btn-primary btn-lg" id="homeJumbotronButton" href="#" role="button">To the Marketplace</a>
             </p>
         </div>
     </section>
@@ -85,29 +82,30 @@
     <section id="viewBooks">
         <form id="formSearchName">
         <div>Seach by name:</div>
-        <div><input type="search" name="searchBox" required /></div>
+        <div><input type="search" id="inputNameSearch" name="searchBox" required /></div>
         <div><input type="submit" placeholder="Search..."
                     id="submitNameSearch" value="Seach Name" /></div>
             </form>
         <br>
+
         <form id="formSearchPageCount">
             <div>Seach by page count:</div>
-            <div>From:</div>
-            <div><input type="number" name=
-                    "fromNumber" required /></div>
             <div>To:</div>
             <div><input type="number" name=
-                    "toNumber" required /></div>
+                    "toNumber" id="inputPageSearch" required /></div>
             <div><input type="submit" placeholder="Search..."
                         id="submitPageCountSearch" value="Seach Page Count" /></div>
         </form>
+
         <br>
+
         <form id="formSearchGenre">
             <div>Seach by genre:</div>
-            <div><input type="search" name="searchBox" required /></div>
+            <div><input type="search" id="inputGenreSearch" name="searchBox" required /></div>
             <div><input type="submit" placeholder="Search..."
                         id="submitGenreSearch" value="Seach Genre" /></div>
         </form>
+
         <br>
         <h1>Books</h1>
         <div id="books">

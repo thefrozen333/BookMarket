@@ -29,6 +29,15 @@ function startApp(){
     $('#formSearchName').submit(searchName);
     $('#formSearchPageCount').submit(searchPageCount);
     $('#formSearchGenre').submit(searchGenre);
+    $("#homeJumbotronButton").click(function(){
+        if(sessionStorage.getItem('authToken')) {
+            showView('viewBooks');
+        }
+        //No logged in user
+        else{
+            showView('viewLogin');
+        }
+    })
 
     //Bind the info error boxes
     $('#infoBox, #errorBox').click(function () {

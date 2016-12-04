@@ -25,13 +25,6 @@ function saveAuthInSession(userInfo) {
     let username = userInfo.username;
     sessionStorage.setItem('username', username);
 }
-
-function getKinveyUserAuthHeaders() {
-    return {
-        'Authorization': "Kinvey " +
-        sessionStorage.getItem('authToken')
-    };
-}
 //user/logout
 function logout() {
     sessionStorage.clear();
@@ -69,6 +62,7 @@ function loginUser(event) {
 }
 //user/register
 function registerUser(event) {
+    //VIEW
     event.preventDefault();
     let username = $('#formRegister input[name=username]').val();
     let password = $('#formRegister input[name=passwd]').val();
@@ -85,7 +79,7 @@ function registerUser(event) {
         username: username,
         password: password
     };
-
+//
     $.ajax({
         method: "POST",
         url: kinveyBaseUrl + "user/" + kinveyAppKey + "/",

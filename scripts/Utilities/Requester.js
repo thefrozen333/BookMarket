@@ -12,11 +12,11 @@ class Requester{
 
     }
 
-    get(){
+    static get(){
         _makeRequest("GET", url, headers);
     }
 
-    post(){
+    static post(){
         _makeRequest("POST", url, headers, data);
     }
 

@@ -5,8 +5,12 @@
     const kinveyAppSecret =
         "9aaf3e7a620c4606874886e97c1795a6";
 
+    sessionStorage.clear();
+    showHideMenuLinks();
+
     let requester = new Requester();
     let authenticationService = new AuthenticationService(kinveyAppKey,kinveyAppSecret);
+
     let bookViews = new BookViews();
     let bookModel = new BookModel(kinveyBaseUrl,kinveyAppKey,requester,authenticationService);
     let bookController = new BookController(bookModel,bookViews);
@@ -14,5 +18,4 @@
     sessionStorage.clear();
     showHideMenuLinks();
     showView('linkHome');
-
 })();
