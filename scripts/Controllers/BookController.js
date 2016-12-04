@@ -48,7 +48,7 @@ class BookController{
             };
 
             this.model.postBook(bookData)
-                .then(this.getBooks);
+                .then(this.getBooks());
         })
     }
 
