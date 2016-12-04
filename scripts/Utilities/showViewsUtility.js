@@ -32,29 +32,6 @@ function showHomeView(){
     showView('viewHome');
 }
 
-
-
 function showBooksView(){
     showView('viewBooks');
-}
-
-function showLoginView() {
-    showView('viewLogin');
-    $('#formLogin').trigger('reset');
-}
-
-function showRegisterView() {
-    $('#formRegister').trigger('reset');
-    showView('viewRegister');
-}
-
-function createBookView() {
-    if(sessionStorage.getItem('authToken')) {
-        $('#formCreateBook').trigger('reset');
-        showView('viewCreateBook');
-    }
-    else{
-        showView('viewLogin');
-        $('#formLogin').trigger('reset');
-    }
 }
