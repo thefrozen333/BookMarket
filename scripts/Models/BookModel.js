@@ -31,7 +31,7 @@ class BookModel{
     }
 
     getBookById(id) {
-        let requestUrl = this._baseUrl + 'appdata/' + this._appKey + '/books' + id;
+        let requestUrl = this._baseUrl + 'appdata/' + this._appKey + '/books/' + id;
 
         return this._requester.get(requestUrl, this._authorizationService.getHeaders())
     }
@@ -51,7 +51,7 @@ class BookModel{
 
     searchName(filter) {
         let filterQuery = `?query={"name":${filter}}`;
-        let searchNameUrl = this._baseUrl + "appdata/" + this._appKey + "/books" + filterQuery;
+        let searchNameUrl = this._baseUrl + "appdata/" + this._appKey + "/books/" + filterQuery;
         return this._requester.get(searchNameUrl, this._authorizationService.getHeaders());
     };
 
