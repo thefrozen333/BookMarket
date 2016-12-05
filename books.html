@@ -193,8 +193,10 @@
     <section id="viewCreateBook">
         <h1>Create new book</h1>
         <form enctype="multipart/form-data" method="post" id="formCreateBook" name="fileUpload">
+            <div>Upload book:</div>
+            <div><input multiple type="file" id="pdfFile" /></div>
             <div>Image:</div>
-            <div><input multiple type="file" id="file" /></div>
+            <div><input multiple type="file" id="imageFile" /></div>
             <div>Name:</div>
             <div><input type="text" name="name" required /></div>
             <div>Genre:</div>

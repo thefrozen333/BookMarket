@@ -28,28 +28,35 @@ class BookController{
     }
 
     createBook(data){
+        data.preventDefault();
+        let pdfAndMetadata = this.view.getPDF();
         let imageAndMetadata = this.view.getImg();
-        this.model.uploadImg(imageAndMetadata[0],imageAndMetadata[1])
+        this.view.validatePageCount();
+        this.model.uploadFile(pdfAndMetadata[0],pdfAndMetadata[1])
             .then((file) => {
-                this.model.secondUploadImg(file._id)
-            }).then((file) => {
-            let imageText = file._downloadURL;
+                this.model.streamFile(file._id)
+                    .then((file) => {
+                        let bookFile = file._downloadURL;
 
-            if ($('#formCreateBook input[name=pageCount]').val() <= 0) {
-                showError('Page count must be greater than zero.');
-                return;
-            }
+                        this.model.uploadFile(imageAndMetadata[0], imageAndMetadata[1])
+                            .then((file) => {
+                                this.model.streamFile(file._id).then((file) => {
+                                    let imageFile = file._downloadURL;
 
-            let bookData = {
-                image: imageText,
-                name: $('#formCreateBook input[name=name]').val(),
-                genre: $('#genre option:selected').val(),
-                pageCount: $('#formCreateBook input[name=pageCount]').val()
-            };
+                                    let bookData = {
+                                        bookFile: bookFile,
+                                        image: imageFile,
+                                        name: $('#formCreateBook input[name=name]').val(),
+                                        genre: $('#genre option:selected').val(),
+                                        pageCount: $('#formCreateBook input[name=pageCount]').val()
+                                    };
+                                    this.model.postBook(bookData)
+                                        .then(this.getBooks());
+                                });
 
-            this.model.postBook(bookData)
-                .then(this.getBooks());
-        })
+                            });
+                    });
+            });
     }
 
     searchGenre() {

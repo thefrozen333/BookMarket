@@ -15,7 +15,7 @@ class BookViews {
         else {
             let table = $('<table>').attr('id', 'myTable')
                 .append(($("<tr>")
-                    .append('<th>Cover</th><th>Title</th><th>Genre</th><th>Page count</th>')));
+                    .append('<th>Cover</th><th>Title</th><th>Genre</th><th>Page count</th><th>Read book</th>')));
             books = books.reverse();
             for (let book of books) {
                 this.appendBookRow(book, table);
@@ -29,13 +29,16 @@ class BookViews {
 //appending desired book to table
     appendBookRow(book, table) {
 
+        let pdfLink = $('<a>').attr("href", book.bookFile);
+        pdfLink.text('[View Book]');
         let image = $('<img>').attr("src", book.image);
 
         table.append($('<tr>').append(
             $('<td>').append(image),
             $('<td>').text(book.name),
             $('<td>').text(book.genre),
-            $('<td>').text(book.pageCount)
+            $('<td>').text(book.pageCount),
+            $('<td>').append(pdfLink)
         ));
     }
 
@@ -85,8 +88,7 @@ class BookViews {
 
 
     getImg() {
-        event.preventDefault();
-        let file = document.getElementById('file').files[0];
+        let file = document.getElementById('imageFile').files[0];
 
         if (file.size > 100000) {
             showError("File size is too big to be a cover of a book, must be less than 100kb.");
@@ -106,6 +108,33 @@ class BookViews {
             };
             let fileAndMetadata = [file, metadata];
             return fileAndMetadata;
+        }
+    }
+
+    getPDF() {
+        let file = document.getElementById('pdfFile').files[0];
+
+        if (file.type !== "application/pdf") {
+            showError("Book type is not PDF.");
+            return;
+        }
+
+        if (file) {
+            let metadata = {
+                mimeType: file.type,
+                size: file.size,
+                public: true
+            };
+
+            let fileAndMetadata = [file, metadata];
+            return fileAndMetadata;
+        }
+    }
+
+    validatePageCount(){
+        if ($('#formCreateBook input[name=pageCount]').val() <= 0) {
+            showError('Page count must be greater than zero.');
+            return;
         }
     }
 }

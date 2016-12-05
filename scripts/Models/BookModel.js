@@ -22,12 +22,12 @@ class BookModel{
         return this._requester.post(postUrl, this._authorizationService.getHeaders(),data);
     }
 
-    uploadImg(img,metadata){
-       return Kinvey.Files.upload(img, metadata);
+    uploadFile(file,metadata){
+        return Kinvey.Files.upload(file, metadata);
     }
 
-    secondUploadImg(imgId){
-       return Kinvey.Files.stream(file._id);
+    streamFile(fileId){
+        return Kinvey.Files.stream(fileId);
     }
 
     getBookById(id) {
