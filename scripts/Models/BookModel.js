@@ -43,7 +43,7 @@ class BookModel{
     };
 
     searchPageCount(filter) {
-        let filterQuery = `?query={"age":{"$lte":${filter}}}`;
+        let filterQuery = `?query={"pageCount":{"$lte":${filter}}}`;
         let searchPageCountUrl = `${this._baseUrl} + appdata/ + ${this._appKey} + /books/` + filterQuery;
         return this._requester.get(searchPageCountUrl,this._authorizationService.getHeaders());
     };
