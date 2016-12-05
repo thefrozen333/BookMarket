@@ -8,12 +8,12 @@ class UserController{
     }
 
     registerUser(){
-        let userObjects = this.view.getDataFromLogin();
+        let userObject = this.view.getDataFromLogin();
         this.model.registerUser(userObject);
     }
 
     loginUser(){
-        let userObjects = this.view.getDataFromRegister();
+        let userObject = this.view.getDataFromRegister();
         this.model.loginUser(userObject);
     }
 }

@@ -20,11 +20,10 @@ class UserView{
             showError("Password must consist of at least 5 characters.");
             return;
         }
-        let userData = {
+        return  {
             username: username,
             password: password
         };
-        return userData;
     }
 
 
@@ -43,10 +42,9 @@ class UserView{
         showError("Password must consist of at least 5 characters.");
         return;
     }
-    let userData = {
-        username: username,
-        password: password
-    };
-       return userData;
+        return  {
+            username: username,
+            password: password
+        };
 }
 }

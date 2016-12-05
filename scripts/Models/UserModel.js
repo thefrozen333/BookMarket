@@ -9,12 +9,12 @@ class UserModel {
         this._requester = requester;
     }
     registerUser(data){
-        let registerUrl = kinveyBaseUrl + "user/" + kinveyAppKey;
-        return this._requester.post(registerUrl, this.authorizationService.getHeaders(), data);
+        let registerUrl = this._baseUrl + "user/" + this._appKey;
+        return this._requester.post(registerUrl, this._authorizationService.getHeaders(), data);
     }
 
     loginUser(data){
-        let loginUrl= kinveyBaseUrl + "user/" + kinveyAppKey + '/login';
-        return this._requester.post(loginUrl, this.authorizationService.getHeaders(), data);
+        let loginUrl= this._baseUrl + "user/" + this._appKey + '/login';
+        return this._requester.post(loginUrl, this._authorizationService.getHeaders(), data);
     }
 }

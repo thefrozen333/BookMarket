@@ -12,8 +12,9 @@
 
     let bookViews = new BookViews();
     let bookModel = new BookModel(kinveyBaseUrl,kinveyAppKey,requester,authenticationService);
-    let userViews = new UserViews();
+    let userViews = new UserView();
     let userModel = new UserModel(kinveyBaseUrl,kinveyAppKey,requester,authenticationService);
+
     let bookController = new BookController(bookModel,bookViews);
     let userController = new UserController(userModel,userViews);
 
