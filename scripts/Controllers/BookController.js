@@ -11,8 +11,8 @@ class BookController{
         let _self = this;
         this.model.getBook(id).then((successData) => {
 
-        }).catch((error) =>{
-            console.log(error)
+        }).catch((error) => {
+            handleAjaxError(error)
         })
     }
 
@@ -22,8 +22,8 @@ class BookController{
         this.model.getBooks().then((successData) => {
             showBooksView();
             _self.view.drawBooks(successData);
-        }).catch((error) =>{
-            console.log(error)
+        }).catch((error) => {
+            handleAjaxError(error)
         })
     }
 
@@ -40,7 +40,8 @@ class BookController{
 
                         this.model.uploadFile(imageAndMetadata[0], imageAndMetadata[1])
                             .then((file) => {
-                                this.model.streamFile(file._id).then((file) => {
+                                this.model.streamFile(file._id)
+                                    .then((file) => {
                                     let imageFile = file._downloadURL;
 
                                     let bookData = {
@@ -51,27 +52,50 @@ class BookController{
                                         pageCount: $('#formCreateBook input[name=pageCount]').val()
                                     };
                                     this.model.postBook(bookData)
-                                        .then(this.getBooks());
+                                        .then(this.getBooks())
+                                        .catch((error) => {
+                                            handleAjaxError(error)
+                                        });
+                                }).catch((error) => {
+                                    handleAjaxError(error)
                                 });
 
+                            }).catch((error) => {
+                                handleAjaxError(error)
                             });
+                    }).catch((error) => {
+                        handleAjaxError(error)
                     });
+            }).catch((error) => {
+                handleAjaxError(error)
             });
     }
 
     searchGenre() {
         let genreFilter = this.view.searchGenre();
-        this.model.searchGenre(genreFilter).then(this.view.renderSearchedBooks(data));
+        this.model.searchGenre(genreFilter)
+            .then(this.view.renderSearchedBooks(data))
+            .catch((error) => {
+                handleAjaxError(error)
+            });
     }
 
     searchPageCount() {
         let pageCountFilter = this.view.searchPageCount();
-        this.model.searchPageCount(pageCountFilter).then(this.view.renderSearchedBooks(data));
+        this.model.searchPageCount(pageCountFilter)
+            .then(this.view.renderSearchedBooks(data))
+            .catch((error) => {
+                handleAjaxError(error)
+            });
     }
 
     searchName() {
         let nameFilter = this.view.searchName();
-        this.model.searchName(nameFilter).then(this.view.renderSearchedBooks(data));
+        this.model.searchName(nameFilter)
+            .then(this.view.renderSearchedBooks(data))
+            .catch((error) => {
+                handleAjaxError(error)
+            });
     }
 
 }
