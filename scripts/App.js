@@ -23,8 +23,8 @@ function startApp () {
     //Bind the navigation menu links
     $('#linkHome').click(showHomeView);
     $('#linkLogin').click(showLoginView);
-    $('#linkRegister').click( () => {showView("viewRegister")});
-    $('#linkCreateBook').click( () => {showView("viewCreateBook")});
+    $('#linkRegister').click(showRegisterView);
+    $('#linkCreateBook').click(showCreateBookView);
     $('#linkListBooks').click(bookController.getBooks);
     $('#linkLogout').click(userController.logout);
 

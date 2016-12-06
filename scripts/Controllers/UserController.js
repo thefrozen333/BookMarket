@@ -23,6 +23,7 @@ class UserController{
 
     loginUser(event){
         event.preventDefault();
+        Kinvey.User.logout();
         let userObject = this.view.getDataFromLogin();
         let promise = Kinvey.User.login(userObject.username, userObject.password)
             .then(function(data){

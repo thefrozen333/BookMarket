@@ -33,9 +33,21 @@ function showHomeView(){
 }
 
 function showBooksView(){
+    $('#formSearchName').trigger('reset');
+    $('#formSearchGenre').trigger('reset');
     showView('viewBooks');
 }
 
 function showLoginView(){
+    $('#formLogin').trigger('reset');
     showView('viewLogin');
+}
+function showRegisterView(){
+    $('#formRegister').trigger('reset');
+    showView('viewRegister');
+}
+
+function showCreateBookView() {
+    $('#formCreateBook').trigger('reset');
+    showView('viewCreateBook');
 }
