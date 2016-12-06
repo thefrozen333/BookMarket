@@ -3,6 +3,7 @@ class AuthenticationService{
         this._appKey = appKey;
         this._appSecret = appSecret;
     }
+
     isLoggedIn(){
         return sessionStorage.getItem('authToken');
     }
@@ -16,5 +17,6 @@ class AuthenticationService{
         }else{
             headers['Authorization'] = 'Basic ' + btoa(this._appKey + ':' + this._appSecret)
         }
+        return headers;
     }
 }

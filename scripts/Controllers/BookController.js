@@ -5,12 +5,18 @@ class BookController{
     constructor(model,view){
         this.model = model;
         this.view = view;
+
+        this.getBook = this.getBook.bind(this);
+        this.getBooks = this.getBooks.bind(this);
+        this.createBook = this.createBook.bind(this);
+        this.searchGenre = this.searchGenre.bind(this);
+        this.searchPageCount = this.searchPageCount.bind(this);
+        this.searchName = this.searchName.bind(this);
     }
 
     getBook(id){
         let _self = this;
         this.model.getBook(id).then((successData) => {
-
         }).catch((error) => {
             handleAjaxError(error)
         })
@@ -27,20 +33,21 @@ class BookController{
         })
     }
 
-    createBook(data){
-        data.preventDefault();
+    createBook(event){
+        event.preventDefault();
+        let _self = this;
         let pdfAndMetadata = this.view.getPDF();
         let imageAndMetadata = this.view.getImg();
         this.view.validatePageCount();
         this.model.uploadFile(pdfAndMetadata[0],pdfAndMetadata[1])
             .then((file) => {
-                this.model.streamFile(file._id)
+               _self.model.streamFile(file._id)
                     .then((file) => {
                         let bookFile = file._downloadURL;
 
-                        this.model.uploadFile(imageAndMetadata[0], imageAndMetadata[1])
+                        _self.model.uploadFile(imageAndMetadata[0], imageAndMetadata[1])
                             .then((file) => {
-                                this.model.streamFile(file._id)
+                                _self.model.streamFile(file._id)
                                     .then((file) => {
                                     let imageFile = file._downloadURL;
 
@@ -51,7 +58,7 @@ class BookController{
                                         genre: $('#genre option:selected').val(),
                                         pageCount: $('#formCreateBook input[name=pageCount]').val()
                                     };
-                                    this.model.postBook(bookData)
+                                    _self.model.postBook(bookData)
                                         .then(this.getBooks())
                                         .catch((error) => {
                                             handleAjaxError(error)
@@ -72,27 +79,30 @@ class BookController{
     }
 
     searchGenre() {
+        let _self = this;
         let genreFilter = this.view.searchGenre();
         this.model.searchGenre(genreFilter)
-            .then(this.view.renderSearchedBooks(data))
+            .then(_self.view.renderSearchedBooks(data))
             .catch((error) => {
                 handleAjaxError(error)
             });
     }
 
     searchPageCount() {
+        let _self = this;
         let pageCountFilter = this.view.searchPageCount();
         this.model.searchPageCount(pageCountFilter)
-            .then(this.view.renderSearchedBooks(data))
+            .then(_self.view.renderSearchedBooks(data))
             .catch((error) => {
                 handleAjaxError(error)
             });
     }
 
     searchName() {
+        let _self = this;
         let nameFilter = this.view.searchName();
         this.model.searchName(nameFilter)
-            .then(this.view.renderSearchedBooks(data))
+            .then(_self.view.renderSearchedBooks(data))
             .catch((error) => {
                 handleAjaxError(error)
             });

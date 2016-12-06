@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e6b4211-e19d-430c-9bbd-7589b358c506" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/books.html" afterPath="$PROJECT_DIR$/books.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/App.js" afterPath="$PROJECT_DIR$/scripts/App.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/Controllers/BookController.js" afterPath="$PROJECT_DIR$/scripts/Controllers/BookController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/Controllers/UserController.js" afterPath="$PROJECT_DIR$/scripts/Controllers/UserController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/Models/UserModel.js" afterPath="$PROJECT_DIR$/scripts/Models/UserModel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/Services/AuthService.js" afterPath="$PROJECT_DIR$/scripts/Services/AuthService.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/Utilities/Requester.js" afterPath="$PROJECT_DIR$/scripts/Utilities/Requester.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/Utilities/showViewsUtility.js" afterPath="$PROJECT_DIR$/scripts/Utilities/showViewsUtility.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/Utilities/utilities.js" afterPath="$PROJECT_DIR$/scripts/Utilities/utilities.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/Views/BookViews.js" afterPath="$PROJECT_DIR$/scripts/Views/BookViews.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/Views/UserView.js" afterPath="$PROJECT_DIR$/scripts/Views/UserView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/auth.js" afterPath="$PROJECT_DIR$/scripts/auth.js" />
     </list>
     <ignored path="BooksLibraryV2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,49 +34,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BookModel.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scripts/Models/BookModel.js">
+      <file leaf-file-name="books.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/books.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="564">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="n#!!block;n#getBookById#0;n#BookModel#0" expanded="false" />
-                <element signature="n#!!block;n#searchGenre#0;n#BookModel#0" expanded="false" />
-                <element signature="n#!!block;n#searchPageCount#0;n#BookModel#0" expanded="false" />
-                <element signature="n#!!block;n#searchName#0;n#BookModel#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="showViewsUtility.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/Utilities/showViewsUtility.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="972">
-              <caret line="36" column="1" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+            <state relative-caret-position="1352">
+              <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="utilities.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/Utilities/utilities.js">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="416">
+              <caret line="34" column="57" lean-forward="false" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="57" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="books-library.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/books-library.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="29" column="53" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="29" selection-end-column="53" />
               <folding>
-                <element signature="n#!!doc;n#showInfo#0" expanded="false" />
+                <element signature="n#!!doc;n#startApp#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserView.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/Views/UserView.js">
+      <file leaf-file-name="Requester.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/Utilities/Requester.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+            <state relative-caret-position="748">
+              <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuthService.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/Services/AuthService.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -75,18 +89,30 @@
       <file leaf-file-name="BookController.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/Controllers/BookController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1188">
-              <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+            <state relative-caret-position="248">
+              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserModel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/Models/UserModel.js">
+      <file leaf-file-name="auth.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/auth.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+            <state relative-caret-position="290">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="15" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#43#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserView.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/Views/UserView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -95,34 +121,12 @@
       <file leaf-file-name="BookViews.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/Views/BookViews.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="133" column="12" lean-forward="false" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="12" />
+            <state relative-caret-position="174">
+              <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
               <folding>
                 <element signature="n#!!block;n#appendBookRow#0;n#BookViews#0" expanded="false" />
-                <element signature="n#!!block;n#getSearchGenre#0;n#BookViews#0" expanded="false" />
-                <element signature="n#!!block;n#searchPageCount#0;n#BookViews#0" expanded="false" />
                 <element signature="n#!!block;n#renderSearchedBooks#0;n#BookViews#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/Controllers/UserController.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -152,6 +156,7 @@
       <find>drawBOoks</find>
       <find>listbooks</find>
       <find>pdf</find>
+      <find>console</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -173,18 +178,20 @@
         <option value="$PROJECT_DIR$/scripts/services/AuthService.js" />
         <option value="$PROJECT_DIR$/scripts/views.js" />
         <option value="$PROJECT_DIR$/scripts/books-library.js" />
-        <option value="$PROJECT_DIR$/scripts/Utilities/showViewsUtility.js" />
-        <option value="$PROJECT_DIR$/scripts/Utilities/Requester.js" />
-        <option value="$PROJECT_DIR$/scripts/auth.js" />
         <option value="$PROJECT_DIR$/scripts/ajax.js" />
-        <option value="$PROJECT_DIR$/scripts/Views/BookViews.js" />
         <option value="$PROJECT_DIR$/scripts/Models/BookModel.js" />
-        <option value="$PROJECT_DIR$/scripts/Controllers/UserController.js" />
-        <option value="$PROJECT_DIR$/scripts/Models/UserModel.js" />
-        <option value="$PROJECT_DIR$/scripts/Views/UserView.js" />
-        <option value="$PROJECT_DIR$/scripts/App.js" />
+        <option value="$PROJECT_DIR$/scripts/Utilities/showViewsUtility.js" />
         <option value="$PROJECT_DIR$/books.html" />
+        <option value="$PROJECT_DIR$/scripts/auth.js" />
+        <option value="$PROJECT_DIR$/scripts/Utilities/utilities.js" />
+        <option value="$PROJECT_DIR$/scripts/Views/UserView.js" />
+        <option value="$PROJECT_DIR$/scripts/Models/UserModel.js" />
+        <option value="$PROJECT_DIR$/scripts/Services/AuthService.js" />
+        <option value="$PROJECT_DIR$/scripts/Utilities/Requester.js" />
+        <option value="$PROJECT_DIR$/scripts/Controllers/UserController.js" />
+        <option value="$PROJECT_DIR$/scripts/App.js" />
         <option value="$PROJECT_DIR$/scripts/Controllers/BookController.js" />
+        <option value="$PROJECT_DIR$/scripts/Views/BookViews.js" />
       </list>
     </option>
   </component>
@@ -218,8 +225,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -296,12 +301,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookMarket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookMarket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookMarket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BookMarket" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -426,12 +469,13 @@
       <workItem from="1480747605169" duration="24420000" />
       <workItem from="1480862013645" duration="22038000" />
       <workItem from="1480892257762" duration="1390000" />
-      <workItem from="1480967612491" duration="995000" />
+      <workItem from="1480967612491" duration="4890000" />
+      <workItem from="1481020947490" duration="12914000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143978000" />
+    <option name="totallyTimeSpent" value="160787000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -443,7 +487,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -498,7 +542,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="14" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -636,45 +680,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/Services/AuthService.js">
+    <entry file="file://$PROJECT_DIR$/scripts/Models/BookModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="17" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="65" column="3" lean-forward="false" selection-start-line="65" selection-start-column="3" selection-end-line="80" selection-end-column="6" />
+        <state relative-caret-position="606">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
-            <element signature="e#0#43#0" expanded="false" />
+            <element signature="n#!!block;n#uploadFile#0;n#BookModel#0" expanded="false" />
+            <element signature="n#!!block;n#getBookById#0;n#BookModel#0" expanded="false" />
+            <element signature="n#!!block;n#searchGenre#0;n#BookModel#0" expanded="false" />
+            <element signature="n#!!block;n#searchPageCount#0;n#BookModel#0" expanded="false" />
+            <element signature="n#!!block;n#searchName#0;n#BookModel#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/books-library.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="54" />
-          <folding>
-            <element signature="n#!!doc;n#startApp#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/Utilities/Requester.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-29">
-          <caret line="0" column="50" lean-forward="false" selection-start-line="0" selection-start-column="50" selection-end-line="0" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/ajax.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-103">
+        <state relative-caret-position="868">
           <caret line="193" column="5" lean-forward="false" selection-start-line="193" selection-start-column="5" selection-end-line="193" selection-end-column="5" />
           <folding>
             <element signature="n#!!doc;n#listBooks#0" expanded="false" />
@@ -682,55 +704,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/books.html">
+    <entry file="file://$PROJECT_DIR$/scripts/Utilities/showViewsUtility.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1337">
-          <caret line="197" column="52" lean-forward="false" selection-start-line="197" selection-start-column="49" selection-end-line="197" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/Models/UserModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="1" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/Views/BookViews.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="133" column="12" lean-forward="false" selection-start-line="133" selection-start-column="12" selection-end-line="133" selection-end-column="12" />
-          <folding>
-            <element signature="n#!!block;n#appendBookRow#0;n#BookViews#0" expanded="false" />
-            <element signature="n#!!block;n#getSearchGenre#0;n#BookViews#0" expanded="false" />
-            <element signature="n#!!block;n#searchPageCount#0;n#BookViews#0" expanded="false" />
-            <element signature="n#!!block;n#renderSearchedBooks#0;n#BookViews#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/Controllers/UserController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        <state relative-caret-position="880">
+          <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/Utilities/utilities.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="990">
+          <caret line="38" column="1" lean-forward="false" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc;n#showInfo#0" expanded="false" />
           </folding>
@@ -739,39 +724,96 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/Views/UserView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="5" lean-forward="false" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        <state relative-caret-position="156">
+          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Controllers/UserController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-261">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Services/AuthService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Models/UserModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="15" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#43#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Utilities/Requester.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Views/BookViews.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!block;n#appendBookRow#0;n#BookViews#0" expanded="false" />
+            <element signature="n#!!block;n#renderSearchedBooks#0;n#BookViews#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/books.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1352">
+          <caret line="52" column="28" lean-forward="true" selection-start-line="52" selection-start-column="28" selection-end-line="52" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/Controllers/BookController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="71" column="5" lean-forward="true" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
+        <state relative-caret-position="248">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/Utilities/showViewsUtility.js">
+    <entry file="file://$PROJECT_DIR$/scripts/books-library.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="36" column="1" lean-forward="false" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/Models/BookModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="675">
+          <caret line="29" column="53" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="29" selection-end-column="53" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#!!block;n#getBookById#0;n#BookModel#0" expanded="false" />
-            <element signature="n#!!block;n#searchGenre#0;n#BookModel#0" expanded="false" />
-            <element signature="n#!!block;n#searchPageCount#0;n#BookModel#0" expanded="false" />
-            <element signature="n#!!block;n#searchName#0;n#BookModel#0" expanded="false" />
+            <element signature="n#!!doc;n#startApp#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="34" column="57" lean-forward="false" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -12,19 +12,23 @@ class Requester{
 
     }
 
-    static get(){
-        _makeRequest("GET", url, headers);
+    get(url, headers){
+       return  _makeRequest("GET", url, headers);
     }
 
-    static post(){
-        _makeRequest("POST", url, headers, data);
+    post(url, headers, data){
+       return _makeRequest("POST", url, headers, data);
     }
 
     put(){
         //TODO
     }
 
-    delete(){
+    del(){
         //TODO
+    }
+
+    patch(url, headers, data){
+       return _makeRequest("PATCH", url, headers, data);
     }
 }

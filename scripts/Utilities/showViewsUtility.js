@@ -35,3 +35,7 @@ function showHomeView(){
 function showBooksView(){
     showView('viewBooks');
 }
+
+function showLoginView(){
+    showView('viewLogin');
+}
