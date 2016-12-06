@@ -26,7 +26,7 @@
     <script src="scripts/Controllers/UserController.js"></script>
     <script src="scripts/App.js"></script>
 </head>
-
+<body>
 <header id="menu">
     <a href="#" id="linkHome">Home</a>
     <a href="#"  style="float:right" id="linkLogin">Login</a>
@@ -37,7 +37,7 @@
 </header>
 
 
-<section id="loadingBox">Loading ...</section>
+<section id="loadingBox">Loading...</section>
 
 <section id="infoBox">Info</section>
 
@@ -56,31 +56,23 @@
             </p>
         </div>
     </section>
+
     <section id="viewLogin">
-        <h1>Please login</h1>
         <form id="formLogin">
-            <div>Username:</div>
-            <div><input type="text" name=
-                    "username" required /></div>
-            <div>Password:</div>
-            <div><input type="password"
-                        name="passwd" required /></div>
-            <div><input type="submit"
-                        id="buttonLoginUser" value="Login" /></div>
+           <!-- <h2 id="plslogin">Please login</h2>-->
+            <h1 id="pleaseLogin">Please Login</h1>
+            <div><input type="text" placeholder = "Username" name="username" required /></div>
+            <div><input type="password"  placeholder = "Password" name="passwd" required /></div>
+            <div><button type="submit" id="buttonLoginUser" value="LOGIN">LOGIN</button> </div>
         </form>
     </section>
 
     <section id="viewRegister">
-        <h1>Please register here</h1>
-        <form id="formRegister">
-            <div>Username:</div>
-            <div><input type="text" name=
-                    "username" required /></div>
-            <div>Password:</div>
-            <div><input type="password"
-                        name="passwd" required /></div>
-            <div><input type="submit"
-                        id="buttonRegisterUser" value="Register" /></div>
+        <form  id="formRegister">
+            <h1 id="pleaseRegister">Please Register</h1>
+            <div><input type="text" placeholder = "Username" name="username" required /></div>
+            <div><input type="password"  placeholder = "Password" name="passwd" required /></div>
+            <div><button type="submit" id="buttonRegisterUser" value="LOGIN">REGISTER</button> </div>
         </form>
     </section>
 

@@ -18,7 +18,7 @@ function listBooks() {
     });
 
     function loadBooksSuccess(books) {
-        showInfo('Books loaded');
+        showInfo('Accessing the library!');
         if (books.length == 0){
             $('#books').text('No books in the library.');
         }
