@@ -37,14 +37,20 @@ class BookModel{
     }
 
     searchGenre(filter) {
-        let filterQuery = `?query={"genre":"${filter}"}`;
+        let filterQuery = `?query={"genre":${filter}}`;
         let searchGenreUrl = this._baseUrl + "appdata/" + this._appKey + "/books/" + filterQuery;
         return this._requester.get(searchGenreUrl, this._authorizationService.getHeaders());
     };
 
+    searchPageCount(filter) {
+        let filterQuery = `?query={"pageCount":{"$lte":${filter}}}`;
+        let searchPageCountUrl = `${this._baseUrl} + appdata/ + ${this._appKey} + /books/` + filterQuery;
+        return this._requester.get(searchPageCountUrl,this._authorizationService.getHeaders());
+    };
+
 
     searchName(filter) {
-        let filterQuery = `?query={"name":"${filter}"}`;
+        let filterQuery = `?query={"name":${filter}}`;
         let searchNameUrl = this._baseUrl + "appdata/" + this._appKey + "/books/" + filterQuery;
         return this._requester.get(searchNameUrl, this._authorizationService.getHeaders());
     };

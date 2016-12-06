@@ -9,7 +9,8 @@ class BookController{
         this.getBook = this.getBook.bind(this);
         this.getBooks = this.getBooks.bind(this);
         this.createBook = this.createBook.bind(this);
-        this.searchGenre = this.searchGenre.bind(this); 
+        this.searchGenre = this.searchGenre.bind(this);
+        this.searchPageCount = this.searchPageCount.bind(this);
         this.searchName = this.searchName.bind(this);
     }
 
@@ -22,6 +23,7 @@ class BookController{
     }
 
     getBooks(){
+
         let _self = this;
         this.model.getBooks().then((successData) => {
             showBooksView();
@@ -42,6 +44,7 @@ class BookController{
                _self.model.streamFile(file._id)
                     .then((file) => {
                         let bookFile = file._downloadURL;
+
                         _self.model.uploadFile(imageAndMetadata[0], imageAndMetadata[1])
                             .then((file) => {
                                 _self.model.streamFile(file._id)
@@ -56,7 +59,7 @@ class BookController{
                                         pageCount: $('#formCreateBook input[name=pageCount]').val()
                                     };
                                     _self.model.postBook(bookData)
-                                        .then(_self.getBooks())
+                                        .then(this.getBooks())
                                         .catch((error) => {
                                             handleAjaxError(error)
                                         });
@@ -75,32 +78,31 @@ class BookController{
             });
     }
 
-    searchGenre(event) {
-        event.preventDefault();
+    searchGenre() {
         let _self = this;
-        let genreFilter = this.view.getSearchGenre();
+        let genreFilter = this.view.searchGenre();
         this.model.searchGenre(genreFilter)
-            .then((data) => {
-                $('#formSearchGenre').trigger('reset');
-                showView("viewSearchedByGenre");
-                _self.view.renderSearchedBooksByGenre(data)
-            })
+            .then(_self.view.renderSearchedBooks(data))
             .catch((error) => {
                 handleAjaxError(error)
             });
     }
 
-
-    searchName(event) {
-        event.preventDefault();
+    searchPageCount() {
         let _self = this;
-        let nameFilter = this.view.getSearchName();
+        let pageCountFilter = this.view.searchPageCount();
+        this.model.searchPageCount(pageCountFilter)
+            .then(_self.view.renderSearchedBooks(data))
+            .catch((error) => {
+                handleAjaxError(error)
+            });
+    }
+
+    searchName() {
+        let _self = this;
+        let nameFilter = this.view.searchName();
         this.model.searchName(nameFilter)
-            .then((data) => {
-            $('#formSearchName').trigger('reset');
-            showView("viewSearchedByNameBooks");
-            _self.view.renderSearchedBooksByName(data)
-        })
+            .then(_self.view.renderSearchedBooks(data))
             .catch((error) => {
                 handleAjaxError(error)
             });

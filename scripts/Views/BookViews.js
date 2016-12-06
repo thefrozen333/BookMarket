@@ -49,47 +49,16 @@ class BookViews {
     };
 
 
-    getSearchPageCount(event) {
+    searchPageCount(event) {
         return $('#inputPageSearch').val();
     };
 
 
-    getSearchName(event) {
+    searchName(event) {
         return $('#inputNameSearch').val();
     };
 
-    renderSearchedBooksByName(books) {
-            $("#searchedByNameBooks").empty();
-            let _self = this;
-            let table = $('<table>').attr('id', 'mySearchNameTable')
-                .append(($("<tr>")
-                    .append('<th>Cover</th><th>Title</th><th>Genre</th><th>Page count</th>')));
-
-            books = books.reverse();
-
-            for (let book of books)
-                this.appendBookRow(book, table);
-            $('#searchedByNameBooks').append(table);
-
-            if ($('#searchedByNameBooks td').length == 0) {
-                showError('No books with that name found, did you mean some of the following books');
-                for (let book of books) {
-                    this.appendBookRow(book, table);
-                }
-                $('#searchedByNameBooks').append(table);
-                $('#mySearchNameTable').page(3);
-            }
-
-            if ($('#searchedByNameBooks td').length == 0) {
-                showError("No book by this name found and no similar books either");
-                return;
-            }
-            showInfo('Search loaded');
-        }
-
-    renderSearchedBooksByGenre(books) {
-        $("#searchedByGenre").empty();
-        let _self = this;
+    renderSearchedBooks(books) {
         let table = $('<table>').attr('id', 'mySearchNameTable')
             .append(($("<tr>")
                 .append('<th>Cover</th><th>Title</th><th>Genre</th><th>Page count</th>')));
@@ -97,25 +66,26 @@ class BookViews {
         books = books.reverse();
 
         for (let book of books)
-            this.appendBookRow(book, table);
-        $('#searchedByGenre').append(table);
+            appendBookRow(book, table);
+        $('#searchedByNameBooks').append(table);
 
-        if ($('#searchedByGenre td').length == 0) {
+        if ($('#searchedByNameBooks td').length == 0) {
             showError('No books with that name found, did you mean some of the following books');
             for (let book of books) {
-                this.appendBookRow(book, table);
+                if (book.name[0].toLowerCase() == $('#formSearchName input[name=searchBox]').val()[0].toLowerCase()) {
+                    appendBookRow(book, table);
+                }
+                $('#searchedByNameBooks').append(table);
             }
-            $('#searchedByGenre').append(table);
             $('#mySearchNameTable').page(3);
         }
 
-        if ($('#searchedByGenre td').length == 0) {
+        if ($('#searchedByNameBooks td').length == 0) {
             showError("No book by this name found and no similar books either");
             return;
         }
         showInfo('Search loaded');
     }
-
 
 
     getImg() {
