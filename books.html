@@ -26,17 +26,19 @@
     <script src="scripts/Controllers/UserController.js"></script>
     <script src="scripts/App.js"></script>
 </head>
-
+<body>
 <header id="menu">
     <a href="#" id="linkHome">Home</a>
-    <a href="#" id="linkLogin">Login</a>
-    <a href="#" id="linkRegister">Register</a>
-    <a href="#" id="linkCreateBook">Create Book</a>
+    <a href="#"  style="float:right" id="linkLogin">Login</a>
+    <a href="#"  style="float:right" id="linkRegister">Register</a>
+    <a href="#" id="linkCreateBook">Add Book</a>
     <a href="#" id="linkListBooks">List Books</a>
-    <a href="#" id="linkLogout">Logout</a>
+    <a href="#"  style="float:right" id="linkLogout">Logout</a>
 </header>
 
-<section id="loadingBox">Loading ...</section>
+
+
+<section id="loadingBox">Loading...</section>
 
 <section id="infoBox">Info</section>
 
@@ -55,41 +57,33 @@
             </p>
         </div>
     </section>
+
     <section id="viewLogin">
-        <h1>Please login</h1>
         <form id="formLogin">
-            <div>Username:</div>
-            <div><input type="text" name=
-                    "username" required /></div>
-            <div>Password:</div>
-            <div><input type="password"
-                        name="passwd" required /></div>
-            <div><input type="submit"
-                        id="buttonLoginUser" value="Login" /></div>
+            <!-- <h2 id="plslogin">Please login</h2>-->
+            <h1 id="pleaseLogin">Please Login</h1>
+            <div><input type="text" placeholder = "Username" name="username" required /></div>
+            <div><input type="password"  placeholder = "Password" name="passwd" required /></div>
+            <div><button type="submit" id="buttonLoginUser" value="LOGIN">LOGIN</button> </div>
         </form>
     </section>
 
     <section id="viewRegister">
-        <h1>Please register here</h1>
-        <form id="formRegister">
-            <div>Username:</div>
-            <div><input type="text" name=
-                    "username" required /></div>
-            <div>Password:</div>
-            <div><input type="password"
-                        name="passwd" required /></div>
-            <div><input type="submit"
-                        id="buttonRegisterUser" value="Register" /></div>
+        <form  id="formRegister">
+            <h1 id="pleaseRegister">Please Register</h1>
+            <div><input type="text" placeholder = "Username" name="username" required /></div>
+            <div><input type="password"  placeholder = "Password" name="passwd" required /></div>
+            <div><button type="submit" id="buttonRegisterUser" value="LOGIN">REGISTER</button> </div>
         </form>
     </section>
 
     <section id="viewBooks">
         <form id="formSearchName">
-        <div>Seach by name:</div>
-        <div><input type="search" id="inputNameSearch" name="searchBox" required /></div>
-        <div><input type="submit" placeholder="Search..."
-                    id="submitNameSearch" value="Seach Name" /></div>
-            </form>
+            <div>Seach by name:</div>
+            <div><input type="search" id="inputNameSearch" name="searchBox" required /></div>
+            <div><input type="submit" placeholder="Search..."
+                        id="submitNameSearch" value="Seach Name" /></div>
+        </form>
         <br>
 
 
