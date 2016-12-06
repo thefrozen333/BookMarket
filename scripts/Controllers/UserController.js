@@ -24,7 +24,6 @@ class UserController{
     loginUser(event){
         event.preventDefault();
         let userObject = this.view.getDataFromLogin();
-        console.log(userObject);
         this.model.loginUser(userObject).then((data) => {
             saveAuthInSession(data);
             showHideMenuLinks();
@@ -41,6 +40,7 @@ class UserController{
         showHideMenuLinks();
         showView('viewHome');
         $('#formLogin').trigger('reset');
+        $('#formRegister').trigger('reset');
         showInfo("Logout successful.");
    }
 }
