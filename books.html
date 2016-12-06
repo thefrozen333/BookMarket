@@ -7,7 +7,6 @@
     <script>!window.jQuery && document.write('<script src="libs/jquery-3.1.1.min.js"><\/script>')</script>
     <script src="https://da189i1jfloii.cloudfront.net/js/kinvey-html5-sdk-3.3.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
     <link rel="stylesheet" type="text/css" href="styles/book-library.css">
     <link rel="stylesheet" type="text/css" href="libs/bootstrap-3.3.7-dist/css/bootstrap.min.css ">
     <script src="scripts/Utilities/paginating.js"></script>
@@ -15,9 +14,6 @@
     <script src="scripts/Utilities/utilities.js"></script>
     <script src="scripts/Services/AuthService.js"></script>
     <script src="scripts/Utilities/Requester.js"></script>
-
-
-
     <script src="scripts/Models/UserModel.js"></script>
     <script src="scripts/Views/UserView.js"></script>
     <script src="scripts/Models/BookModel.js"></script>
@@ -25,8 +21,9 @@
     <script src="scripts/Controllers/BookController.js"></script>
     <script src="scripts/Controllers/UserController.js"></script>
     <script src="scripts/App.js"></script>
+    <script src="libs/kinvey-lib.js"></script>
 </head>
-<body>
+
 <header id="menu">
     <a href="#" id="linkHome">Home</a>
     <a href="#"  style="float:right" id="linkLogin">Login</a>
@@ -37,7 +34,7 @@
 </header>
 
 
-
+<body id="bodybg">
 <section id="loadingBox">Loading...</section>
 
 <section id="infoBox">Info</section>
@@ -64,7 +61,7 @@
             <h1 id="pleaseLogin">Please Login</h1>
             <div><input type="text" placeholder = "Username" name="username" required /></div>
             <div><input type="password"  placeholder = "Password" name="passwd" required /></div>
-            <div><button type="submit" id="buttonLoginUser" value="LOGIN">LOGIN</button> </div>
+            <div><button type="submit" id="buttonLoginUser">LOGIN</button> </div>
         </form>
     </section>
 
@@ -73,7 +70,7 @@
             <h1 id="pleaseRegister">Please Register</h1>
             <div><input type="text" placeholder = "Username" name="username" required /></div>
             <div><input type="password"  placeholder = "Password" name="passwd" required /></div>
-            <div><button type="submit" id="buttonRegisterUser" value="LOGIN">REGISTER</button> </div>
+            <div><button type="submit" id="buttonRegisterUser">REGISTER</button> </div>
         </form>
     </section>
 
@@ -157,15 +154,16 @@
     </section>
 
     <section id="viewCreateBook">
-        <h1>Create new book</h1>
+
         <form enctype="multipart/form-data" method="post" id="formCreateBook" name="fileUpload">
-            <div>Upload book:</div>
-            <div><input multiple type="file" id="pdfFile" /></div>
-            <div>Image:</div>
+            <h1 id="crtbook">Create new book</h1>
+            <div id="updbook">Upload book:</div>
+            <div><input multiple type="file" id="pdfFile"/></div>
+            <div id="updimage">Image:</div>
             <div><input multiple type="file" id="imageFile" /></div>
-            <div>Name:</div>
-            <div><input type="text" name="name" required /></div>
-            <div>Genre:</div>
+            <div id="updname">Name:</div>
+            <div><input type="text" placeholder="Book's Name" name="name" required /></div>
+            <div id="updgenre">Genre:</div>
             <div><select id="genre" required>
                 <option value="Comedy">Comedy</option>
                 <option value="Drama">Drama</option>
@@ -175,10 +173,10 @@
                 <option value="Fantasy">Fantasy</option>
                 <option value="Thriller">Thriller</option>
             </select></div>
-            <div>Pages count:</div>
+            <div id="updpages">Pages count:</div>
             <div><input type="number" name="pageCount" required /></div>
-            <div><input type="submit"
-                        id="buttonCreateBook" value="Create" /></div>
+            <div><button type="submit" id="buttonCreateBook">CREATE</button></div>
+
         </form>
     </section>
 </main>
