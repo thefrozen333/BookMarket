@@ -1,71 +1,83 @@
 header{
     width:100%;
-    height:35px;
+    height:30px;
     position:fixed;
     top:0;
     left:0;
-    background-color: darkslategray;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 #menu{
     display: block;
     text-align: center;
-    padding: 3px 15px;
+    padding: 4px 15px;
     font-weight: bolder;
-
     font-family: monospace;
-
-    font-size: 150%;
-
-
-}
-#linkCreateBook, #linkListBooks{
-    letter-spacing: -2px;
-    word-spacing: -5px;
-    padding-right: 10px;
+    font-size: 120%;
 }
 
-
- #linkCreateBook, #linkListBooks, #linkRegister, #linkLogin, #linkLogout {
-    color: #d6e9c6;
-}
-#linkHome {
+#linkHome{
 float:left;
-    color: #4CAF50;
-    font-weight: 900;
-    padding-left: -25px;
 }
+
 #linkRegister {
 padding-right: 10px;
 }
 
 
-main > section {
+/*
+#menu {
+    background: #DDD;
+    text-align: center;
+    padding: 5px;
+    line-height: 1.5;
+    border-radius: 3px;
+    overflow: auto;
+}
 
+
+#menu a {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#menu a:hover {
+    background: #BBB;
+}
+*/
+
+main > section {
     display: none;
     padding: 20px 5px;
 }
-section h1 {
 
+section h1 {
     margin: 10px 0px;
     font-size: 1.2em;
 }
+
+
+
 table th {
     background: #DDD;
     padding: 10px;
 }
+
 table td {
     padding: 5px 10px;
     background: #EEE;
     text-align: center;
     vertical-align: top;
+
 }
 
+
+
 #infoBox, #errorBox, #loadingBox {
-    position:inherit;
     display: none;
     width: 15%;
-    margin: 40px auto;
+    margin: 45px auto;
     color: white;
     text-align: center;
     padding: 2px;
@@ -75,6 +87,9 @@ table td {
     font-size: 120%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+
+
 
 #loadingBox {
     background: #7CB3E9;
@@ -108,97 +123,4 @@ ul.pagination li a.active {
 
 ul.pagination li a:hover:not(.active) {background-color: #ddd;}
 
-/*Login formite*/
 
-
-#viewLogin {
-    width: 320px;
-    padding: 2% 0 0;
-    margin: auto;
-}
-#formLogin {
-    position: relative;
-    background: #FFFFFF;
-    max-width: 360px;
-    margin: auto;
-    padding: 40px;
-    text-align: center;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-#formLogin input {
-
-    outline: 0;
-    background: #f2f2f2;
-    width: 100%;
-    border: 0;
-    margin: 0 0 15px;
-    padding: 15px;
-    box-sizing: border-box;
-    font-size: 14px;
-}
-#formLogin button {
-    font-weight: bolder;
-    font-family: monospace;
-    background: darkslategray;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: -5%;
-    padding: 12px;
-    color: #FFFFFF;
-    font-size: 120%;
-    cursor: pointer;
-}
-#pleaseLogin{
-    margin: -20px 0 15px;
-    font-weight: bolder;
-    font-family: monospace;
-    font-size: 120%;
-}
-
-
-/*Register Formite*/
-
-
-#viewRegister {
-    width: 320px;
-    padding: 2% 0 0;
-    margin: auto;
-}
-#formRegister {
-    position: relative;
-    background: #FFFFFF;
-    max-width: 360px;
-    margin: auto;
-    padding: 40px;
-    text-align: center;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-}
-#formRegister input {
-
-    outline: 0;
-    background: #f2f2f2;
-    width: 100%;
-    border: 0;
-    margin: 0 0 15px;
-    padding: 15px;
-    box-sizing: border-box;
-    font-size: 14px;
-}
-#formRegister button {
-    font-weight: bolder;
-    font-family: monospace;
-    background: darkslategray;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: -5%;
-    padding: 12px;
-    color: #FFFFFF;
-    font-size: 120%;
-    cursor: pointer;
-}
-#pleaseRegister{
-    margin: -20px 0 15px;
-    font-weight: bolder;
-    font-family: monospace;
-    font-size: 120%;
-}

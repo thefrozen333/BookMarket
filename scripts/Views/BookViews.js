@@ -9,7 +9,7 @@ class BookViews {
     //view
     drawBooks(books) {
         $("#books").empty();
-        showInfo('Accessing the library!');
+        showInfo('Books loaded');
         if (books.length == 0) {
             $('#books').text('No books in the library.');
         }
