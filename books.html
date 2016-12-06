@@ -32,7 +32,9 @@
     <a href="#" id="linkListBooks">List Books</a>
     <a href="#"  style="float:right" id="linkLogout">Logout</a>
 </header>
-
+<footer>
+    <o>thefrozen333, VladislavMitrov, Toncheff96, teodosiev</o>
+</footer>
 
 <body id="bodybg">
 <section id="loadingBox">Loading...</section>
@@ -44,14 +46,43 @@
 <br>
 <main>
     <section id="viewHome">
-        <div class="jumbotron">
-            <h1 class="display-3">Book Marketplace</h1>
-            <p class="lead">“Good friends, good books, and a sleepy conscience: this is the ideal life.”
+        <div id="quote">
+            <p >“Good friends, good books, and a sleepy conscience: this is the ideal life.”
                 ― Mark Twain</p>
-            <hr class="my-2">
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" id="homeJumbotronButton" href="#" role="button">To the Marketplace</a>
-            </p>
+            <P>“So many books, so little time.”
+                ― Frank Zappa</P>
+            <p>“A room without books is like a body without a soul.”
+                ― Marcus Tullius Cicero</p>
+            <p>“The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.”
+                ― Jane Austen, Northanger Abbey</p>
+            <p>“Fairy tales are more than true: not because they tell us that dragons exist, but because they tell us that dragons can be beaten.”
+                ― Neil Gaiman, Coraline</p>
+            <p>“Outside of a dog, a book is man's best friend. Inside of a dog it's too dark to read.”
+            ― Groucho Marx, The Essential Groucho: Writings For By And About Groucho Marx</p>
+            <p>“I have always imagined that Paradise will be a kind of library.”
+                ― Jorge Luis Borges</p>
+            <p>“Sometimes, you read a book and it fills you with this weird evangelical zeal, and you become convinced that the shattered world will never be put back together unless and until all living humans read the book.”
+                ― John Green, The Fault in Our Stars</p>
+            <p>“Never trust anyone who has not brought a book with them.”
+                ― Lemony Snicket, Horseradish</p>
+            <p>“If you only read the books that everyone else is reading, you can only think what everyone else is thinking.”
+                ― Haruki Murakami, Norwegian Wood</p>
+            <p>“You can never get a cup of tea large enough or a book long enough to suit me.”
+                ― C.S. Lewis</p>
+            <p>“If one cannot enjoy reading a book over and over again, there is no use in reading it at all.”
+                ― Oscar Wilde</p>
+            <p>“I find television very educating. Every time somebody turns on the set, I go into the other room and read a book.”
+                ― Groucho Marx</p>
+            <p>“There is no friend as loyal as a book.”
+                ― Ernest Hemingway</p>
+            <p>“It is what you read when you don't have to that determines what you will be when you can't help it.”
+                ― Oscar Wilde</p>
+            <p>“What really knocks me out is a book that, when you're all done reading it, you wish the author that wrote it was a terrific friend of yours and you could call him up on the phone whenever you felt like it. That doesn't happen much, though.”
+                ― J.D. Salinger, The Catcher in the Rye</p>
+            <p>“Books are the ultimate Dumpees: put them down and they’ll wait for you forever; pay attention to them and they always love you back.”
+                ― John Green, An Abundance of Katherines</p>
+            <p>“′Classic′ - a book which people praise and don't read.”
+                ― Mark Twain</p>
         </div>
     </section>
 
@@ -75,26 +106,22 @@
     </section>
 
     <section id="viewBooks">
+<section id="searchp">
         <form id="formSearchName">
-            <div>Seach by name:</div>
-            <div><input type="search" id="inputNameSearch" name="searchBox" required /></div>
-            <div><input type="submit" placeholder="Search..."
-                        id="submitNameSearch" value="Seach Name" /></div>
+            <div><input type="search" id="inputNameSearch" placeholder="Search by name:" name="searchBox" required /></div>
+            <div><button type="submit" id="submitNameSearch">Search</button></div>
         </form>
         <br>
-
-
         <form id="formSearchGenre">
-            <div>Seach by genre:</div>
-            <div><input type="search" id="inputGenreSearch" name="searchBox" required /></div>
-            <div><input type="submit" placeholder="Search..."
-                        id="submitGenreSearch" value="Seach Genre" /></div>
+            <div><input type="search" id="inputGenreSearch" placeholder="Search by genre:" name="searchBox" required /></div>
+            <div><button type="submit" id="submitGenreSearch">Search</button></div>
         </form>
+</section>
 
         <br>
         <h1>Books</h1>
         <div id="books">
-            <table>
+            <table id="book2">
                 <tr>
                     <th>Cover</th>
                     <th>Title</th>

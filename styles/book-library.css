@@ -1,3 +1,6 @@
+/*#bodybg{
+    background-image: url(https://images6.alphacoders.com/375/375332.jpg);
+}*/
 
 header{
     width:100%;
@@ -8,7 +11,22 @@ header{
     background: darkslategray;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+footer{
+    font-weight: bolder;
+    font-family: monospace;
+    font-size:120%;
+    text-align: end;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 20px;
+    height: 30px;
+    letter-spacing: -2px;
+    padding-right: 10px;
+}
+#names{
 
+}
 #menu{
     background: darkslategray;
     text-align: center;
@@ -39,6 +57,18 @@ header{
 
 #linkRegister {
     padding-right: 10px;
+}
+#quote{
+    margin-top: 50px;
+    text-align: center;
+
+    font-weight: bolder;
+    font-family: monospace;
+    font-size:140%;
+    text-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    letter-spacing: -2px;
+
+
 }
 
 main > section {
@@ -216,6 +246,8 @@ ul.pagination li a:hover:not(.active) {background-color: #ddd;}*/
     width: 460px;
     padding: 6% 0 0;
     margin: auto;
+    letter-spacing:-1px;
+    word-spacing: -5px;
 }
     #formCreateBook {
     position: relative;
@@ -257,6 +289,59 @@ padding: 12px;
 color: #FFFFFF;
 font-size: 120%;
 cursor: pointer;
+}
+
+#formSearchName{
+    font-weight: bolder;
+    font-family: monospace;
+    font-size: 120%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#inputNameSearch{
+    width: 250px;
+}
+#submitNameSearch{
+    font-weight: bolder;
+    font-family: monospace;
+    background: #67b168;
+    width: 250px;
+  /*  margin-top: 10px;
+    margin-bottom: -5%;
+    padding: 5px;
+    color: #FFFFFF;
+    font-size: 80%;
+    cursor: pointer;*/
+}
+
+#formSearchGenre{
+    font-weight: bolder;
+    font-family: monospace;
+    font-size: 120%;
+    margin-bottom: 10px;
+    margin-top: -20px;
+}
+#inputGenreSearch{
+    width: 250px;
+}
+#submitGenreSearch{
+    font-weight: bolder;
+    font-family: monospace;
+    background: #67b168;
+    width: 250px;
+ /*   margin-top: 10px;
+    margin-bottom: -5%;
+    padding: 5px;
+    color: #FFFFFF;
+    font-size: 80%;
+    cursor: pointer;*/
+}
+
+#books{
+    font-weight: bolder;
+    font-family: monospace;
+    color: #0f0f0f;
+    font-size: 140%;
 }
 
 
