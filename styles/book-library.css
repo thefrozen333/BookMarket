@@ -1,3 +1,31 @@
+header{
+    width:100%;
+    height:30px;
+    position:fixed;
+    top:0;
+    left:0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#menu{
+    display: block;
+    text-align: center;
+    padding: 4px 15px;
+    font-weight: bolder;
+    font-family: monospace;
+    font-size: 120%;
+}
+
+#linkHome{
+float:left;
+}
+
+#linkRegister {
+padding-right: 10px;
+}
+
+
+/*
 #menu {
     background: #DDD;
     text-align: center;
@@ -17,6 +45,7 @@
 #menu a:hover {
     background: #BBB;
 }
+*/
 
 main > section {
     display: none;
@@ -43,15 +72,24 @@ table td {
 
 }
 
+
+
 #infoBox, #errorBox, #loadingBox {
     display: none;
-    width: 80%;
-    margin: 10px auto;
+    width: 15%;
+    margin: 45px auto;
     color: white;
     text-align: center;
-    padding: 5px;
-    border-radius: 3px;
+    padding: 2px;
+    border-radius: 1px;
+    font-weight: bolder;
+    font-family: monospace;
+    font-size: 120%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+
+
 
 #loadingBox {
     background: #7CB3E9;
@@ -84,3 +122,5 @@ ul.pagination li a.active {
 }
 
 ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+
+
