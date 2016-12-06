@@ -8,8 +8,8 @@ function startApp () {
         appKey: kinveyAppKey,
         appSecret: kinveyAppSecret
     });
-
-    sessionStorage.clear();
+//Vodi do zaguba na sesssiona sled redirektvane prez View books
+/*    sessionStorage.clear();*/
     let requester = new Requester();
     let authenticationService = new AuthenticationService(kinveyAppKey,kinveyAppSecret);
 
