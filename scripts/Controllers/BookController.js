@@ -10,7 +10,6 @@ class BookController{
         this.getBooks = this.getBooks.bind(this);
         this.createBook = this.createBook.bind(this);
         this.searchGenre = this.searchGenre.bind(this);
-        this.searchPageCount = this.searchPageCount.bind(this);
         this.searchName = this.searchName.bind(this);
     }
 
@@ -59,50 +58,52 @@ class BookController{
                                         pageCount: $('#formCreateBook input[name=pageCount]').val()
                                     };
                                     _self.model.postBook(bookData)
-                                        .then(this.getBooks())
-                                        .catch((error) => {
-                                            handleAjaxError(error)
-                                        });
-                                }).catch((error) => {
-                                    handleAjaxError(error)
-                                });
-
-                            }).catch((error) => {
-                                handleAjaxError(error)
-                            });
-                    }).catch((error) => {
-                        handleAjaxError(error)
-                    });
+                                        .then( () => {
+                                            _self.getBooks()
+                                        })
+                                })
+                            })
+                    })
             }).catch((error) => {
                 handleAjaxError(error)
             });
     }
 
-    searchGenre() {
+    searchGenre(event) {
+        event.preventDefault();
         let _self = this;
-        let genreFilter = this.view.searchGenre();
+        let genreFilter = this.view.getSearchGenre();
+
         this.model.searchGenre(genreFilter)
-            .then(_self.view.renderSearchedBooks(data))
+            .then((data) => {
+            if(data.length == 0) {
+                showError('There is no such category!');
+                return;
+            }
+                _self.view.renderSearchedBooksByCategory(data);
+                showInfo('Search loaded');
+                showView("viewSearchedByGenre");
+            })
             .catch((error) => {
                 handleAjaxError(error)
             });
     }
 
-    searchPageCount() {
-        let _self = this;
-        let pageCountFilter = this.view.searchPageCount();
-        this.model.searchPageCount(pageCountFilter)
-            .then(_self.view.renderSearchedBooks(data))
-            .catch((error) => {
-                handleAjaxError(error)
-            });
-    }
 
-    searchName() {
+    searchName(event) {
+        event.preventDefault();
         let _self = this;
         let nameFilter = this.view.searchName();
         this.model.searchName(nameFilter)
-            .then(_self.view.renderSearchedBooks(data))
+            .then((data) => {
+                if(data.length == 0) {
+                    showError('No books with that name found!');
+                    return;
+                }
+                _self.view.renderSearchedBooksByName(data);
+                showInfo('Search loaded');
+                showView("viewSearchedByNameBooks");
+            })
             .catch((error) => {
                 handleAjaxError(error)
             });

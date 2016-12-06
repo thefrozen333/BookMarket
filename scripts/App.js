@@ -9,7 +9,6 @@ function startApp () {
         appSecret: kinveyAppSecret
     });
 
-    sessionStorage.clear();
     let requester = new Requester();
     let authenticationService = new AuthenticationService(kinveyAppKey,kinveyAppSecret);
 
@@ -44,7 +43,7 @@ function startApp () {
         else{
             showView('viewLogin');
         }
-    })
+    });
 
     //Bind the info error boxes
     $('#infoBox, #errorBox').click(function () {

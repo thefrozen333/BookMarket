@@ -32,10 +32,10 @@ class BookViews {
 
         let pdfLink = $('<a>').attr("href", book.bookFile);
         pdfLink.text('[View Book]');
-        let image = $('<img>').attr("src", book.image);
+        let imageFile = $('<img>').attr("src", book.image);
 
         table.append($('<tr>').append(
-            $('<td>').append(image),
+            $('<td>').append(imageFile),
             $('<td>').text(book.name),
             $('<td>').text(book.genre),
             $('<td>').text(book.pageCount),
@@ -49,42 +49,40 @@ class BookViews {
     };
 
 
-    searchPageCount(event) {
-        return $('#inputPageSearch').val();
-    };
-
-
     searchName(event) {
         return $('#inputNameSearch').val();
     };
 
-    renderSearchedBooks(books) {
+
+
+    renderSearchedBooksByName(books) {
+        $("#searchedByNameBooks").empty();
         let table = $('<table>').attr('id', 'mySearchNameTable')
             .append(($("<tr>")
-                .append('<th>Cover</th><th>Title</th><th>Genre</th><th>Page count</th>')));
+                .append('<th>Cover</th><th>Title</th><th>Genre</th><th>Page count</th><th>Read Book</th>')));
 
         books = books.reverse();
 
         for (let book of books)
-            appendBookRow(book, table);
+            this.appendBookRow(book, table);
+
         $('#searchedByNameBooks').append(table);
+        $('#mySearchNameTable').page(3);
+    }
 
-        if ($('#searchedByNameBooks td').length == 0) {
-            showError('No books with that name found, did you mean some of the following books');
-            for (let book of books) {
-                if (book.name[0].toLowerCase() == $('#formSearchName input[name=searchBox]').val()[0].toLowerCase()) {
-                    appendBookRow(book, table);
-                }
-                $('#searchedByNameBooks').append(table);
-            }
-            $('#mySearchNameTable').page(3);
-        }
+    renderSearchedBooksByCategory(books) {
+        $("#searchedByGenre").empty();
+        let table = $('<table>').attr('id', 'mySearchNameTable')
+            .append(($("<tr>")
+                .append('<th>Cover</th><th>Title</th><th>Genre</th><th>Page count</th><th>Read Book</th>')));
 
-        if ($('#searchedByNameBooks td').length == 0) {
-            showError("No book by this name found and no similar books either");
-            return;
-        }
-        showInfo('Search loaded');
+        books = books.reverse();
+
+        for (let book of books)
+            this.appendBookRow(book, table);
+
+        $('#searchedByGenre').append(table);
+        $('#mySearchNameTable').page(3);
     }
 
 

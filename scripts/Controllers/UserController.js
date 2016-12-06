@@ -24,14 +24,13 @@ class UserController{
     loginUser(event){
         event.preventDefault();
         let userObject = this.view.getDataFromLogin();
-        console.log(userObject);
-        this.model.loginUser(userObject).then((data) => {
-            saveAuthInSession(data);
-            showHideMenuLinks();
-            showHomeView();
-        }).catch((error) =>{
-            handleAjaxError(error);
-        });
+        let promise = Kinvey.User.login(userObject.username, userObject.password)
+            .then(function(data){
+                saveAuthInSession(data);
+                showHideMenuLinks();
+                showHomeView();
+            })
+            .catch(handleAjaxError);
     }
 
 
