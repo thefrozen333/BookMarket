@@ -32,7 +32,10 @@ footer{
     font-family: monospace;
     font-size:120%;
 }
-
+#loggedUser{
+    padding-left: 10px;
+    color:white;
+}
 #linkCreateBook, #linkListBooks {
     letter-spacing: -2px;
     word-spacing: -5px;

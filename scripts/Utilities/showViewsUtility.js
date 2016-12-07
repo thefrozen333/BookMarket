@@ -16,6 +16,7 @@ function showHideMenuLinks() {
         $('#linkListBooks').show();
         $('#linkLogout').show();
         $('#linkCreateBook').show();
+        $('#loggedUser').show();
     }
 
     else {
@@ -25,6 +26,8 @@ function showHideMenuLinks() {
         $('#linkListBooks').hide();
         $('#linkLogout').hide();
         $('#linkCreateBook').hide();
+        $('#loggedUser').hide();
+
     }
 }
 

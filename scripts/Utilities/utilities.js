@@ -36,4 +36,5 @@ function saveAuthInSession(userInfo) {
     sessionStorage.setItem('userId', userId);
     let username = userInfo.username;
     sessionStorage.setItem('username', username);
+    $("#loggedUser").text(username);
 }

@@ -35,15 +35,16 @@ function startApp () {
     $('#formSearchName').submit(bookController.searchName);
     $('#formSearchPageCount').submit(bookController.searchPageCount);
     $('#formSearchGenre').submit(bookController.searchGenre);
-    $("#homeJumbotronButton").click(function(){
+    /*$("#homeJumbotronButton").click(function(){
         if(sessionStorage.getItem('authToken')) {
             showView('viewBooks');
+
         }
         //No logged in user
         else{
             showView('viewLogin');
         }
-    });
+    });*/
 
     //Bind the info error boxes
     $('#infoBox, #errorBox').click(function () {
@@ -58,4 +59,5 @@ function startApp () {
 
     showHideMenuLinks();
     showView('viewHome');
+
 }
