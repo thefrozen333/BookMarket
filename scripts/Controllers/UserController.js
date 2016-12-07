@@ -12,6 +12,17 @@ class UserController{
         event.preventDefault();
 
         let userObject = this.view.getDataFromRegister();
+
+        if (userObject.username.length < 5) {
+            showError("Username must consist of at least 5 characters.");
+            return;
+        }
+
+        if (userObject.password.length < 5) {
+            showError("Password must consist of at least 5 characters.");
+            return;
+        }
+        
         this.model.registerUser(userObject).then((data) => {
             saveAuthInSession(data);
             showHideMenuLinks();
@@ -29,6 +40,17 @@ class UserController{
         }
         
         let userObject = this.view.getDataFromLogin();
+
+        if (userObject.username.length < 5) {
+            showError("Username must consist of at least 5 characters.");
+            return;
+        }
+
+        if (userObject.password.length < 5) {
+            showError("Password must consist of at least 5 characters.");
+            return;
+        }
+        
         let promise = Kinvey.User.login(userObject.username, userObject.password)
             .then(function(data){
                 saveAuthInSession(data);

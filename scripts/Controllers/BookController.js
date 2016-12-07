@@ -76,10 +76,6 @@ class BookController{
 
         this.model.searchGenre(genreFilter)
             .then((data) => {
-            if(data.length == 0) {
-                showError('There is no such category!');
-                return;
-            }
                 _self.view.renderSearchedBooksByCategory(data);
                 showInfo('Search loaded');
                 showView("viewSearchedByGenre");
