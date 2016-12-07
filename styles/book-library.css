@@ -1,7 +1,3 @@
-/*#bodybg{
-    background-image: url(https://images6.alphacoders.com/375/375332.jpg);
-}*/
-
 header{
     width:100%;
     height:35px;
@@ -24,9 +20,7 @@ footer{
     letter-spacing: -2px;
     padding-right: 10px;
 }
-#names{
 
-}
 #menu{
     background: darkslategray;
     text-align: center;
@@ -70,34 +64,32 @@ footer{
 
 
 }
-
 main > section {
     display: none;
     padding: 20px 5px;
 }
-
 section h1 {
     margin: 10px 0px;
     font-size: 1.2em;
 }
 
-
-
 table th {
-    background: #DDD;
+
     padding: 10px;
+    box-shadow: -1px -1px 1px -1px rgba(0,0,0,0.75);
 }
 
 table td {
     padding: 5px 10px;
-    background: #EEE;
+
     text-align: center;
     vertical-align: top;
+    box-shadow: -1px -1px 1px -1px rgba(0,0,0,0.75);
+
+
 
 }
-
-
-
+/*info box*/
 #infoBox, #errorBox, #loadingBox {
     position: fixed;
     padding:2px;
@@ -122,6 +114,10 @@ table td {
 #errorBox {
     background: #F50;
 }
+
+
+/*Login formite*/
+
 
 #viewLogin {
     width: 320px;
@@ -215,7 +211,7 @@ table td {
     font-size: 120%;
 }
 
-
+/*formi za addvane na knigi*/
 #viewCreateBook {
     width: 460px;
     padding: 6% 0 0;
@@ -223,7 +219,7 @@ table td {
     letter-spacing:-1px;
     word-spacing: -5px;
 }
-    #formCreateBook {
+#formCreateBook {
     position: relative;
     background: #FFFFFF;
     max-width: 360px;
@@ -232,12 +228,12 @@ table td {
     text-align: center;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-    #crtbook{
-        margin: -20px 0 15px;
-        font-weight: bolder;
-        font-family: monospace;
-        font-size: 150%;
-    }
+#crtbook{
+    margin: -20px 0 15px;
+    font-weight: bolder;
+    font-family: monospace;
+    font-size: 150%;
+}
 #updbook, #updimage, #updname, #updgenre, #updpages{
     font-weight: bolder;
     font-family: monospace;
@@ -253,18 +249,18 @@ table td {
 
 
 #buttonCreateBook {
-font-weight: bolder;
-font-family: monospace;
-background: darkslategray;
-width: 100%;
-margin-top: 10px;
-margin-bottom: -5%;
-padding: 12px;
-color: #FFFFFF;
-font-size: 120%;
-cursor: pointer;
+    font-weight: bolder;
+    font-family: monospace;
+    background: darkslategray;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: -5%;
+    padding: 12px;
+    color: #FFFFFF;
+    font-size: 120%;
+    cursor: pointer;
 }
-
+/*search formite*/
 #formSearchName{
     font-weight: bolder;
     font-family: monospace;
@@ -280,12 +276,12 @@ cursor: pointer;
     font-family: monospace;
     background: #67b168;
     width: 250px;
-  /*  margin-top: 10px;
-    margin-bottom: -5%;
-    padding: 5px;
-    color: #FFFFFF;
-    font-size: 80%;
-    cursor: pointer;*/
+    /*  margin-top: 10px;
+      margin-bottom: -5%;
+      padding: 5px;
+      color: #FFFFFF;
+      font-size: 80%;
+      cursor: pointer;*/
 }
 
 #formSearchGenre{
@@ -303,22 +299,28 @@ cursor: pointer;
     font-family: monospace;
     background: #67b168;
     width: 250px;
- /*   margin-top: 10px;
-    margin-bottom: -5%;
-    padding: 5px;
-    color: #FFFFFF;
-    font-size: 80%;
-    cursor: pointer;*/
+    /*   margin-top: 10px;
+       margin-bottom: -5%;
+       padding: 5px;
+       color: #FFFFFF;
+       font-size: 80%;
+       cursor: pointer;*/
 }
-
+/*tablici text*/
 #books{
     font-weight: bolder;
     font-family: monospace;
     color: #0f0f0f;
     font-size: 140%;
 }
-
-
+/*headeri pri tablicite*/
+#bk, #bk1, #bk2{
+    font-weight: bolder;
+    font-family: monospace;
+    color: #0f0f0f;
+    font-size: 140%;
+    letter-spacing: -2px;
+}
 
 
 
