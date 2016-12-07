@@ -34,10 +34,9 @@ class UserController{
 
     loginUser(event){
         event.preventDefault();  
-        if(sessionStorage.getItem('authToken')) {
-            sessionStorage.clear();
-            Kinvey.User.logout();     
-        }
+           
+        sessionStorage.clear();
+        Kinvey.User.logout();
         
         let userObject = this.view.getDataFromLogin();
 
